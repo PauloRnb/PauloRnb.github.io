@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main__content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper, .swiper-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 70%;
+}
+
+.card__main-box {
+    border-radius: 0.6rem;
+    border: .1rem solid #ccc;
+    padding: 1.2rem;
+    width: 11rem;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.text > span {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .01rem;
+}
+
+.second-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.09rem;
+}
+
+.second-text > span {
+    font-size: .7rem;
+}
+
+.box__img {
+    width: .9rem;
+    height: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box__img > img {
+    width: .8rem;
+}
+
+.box__medails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .3rem;
+}
+
+.img__medails {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.img__medails > img {
+    width: 1rem;
+}
+
+.img__medails > span {
+    font-size: .8rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 950px) {
+    
+}
+
+@media screen and (max-width: 750px) {
+    
+}
+
+@media screen and (max-width: 550px) {
+    
+}
+
+@media screen and (max-width: 400px) {
+    
+}
+
+
