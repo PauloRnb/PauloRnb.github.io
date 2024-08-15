@@ -9,10 +9,13 @@
 
     <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
+
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- Remix ICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
 </head>
+
 <body>
     <header class="header__main">
         <nav class="navigation__menu">
@@ -33,229 +36,296 @@
     </header>
 
     <!-- Section Home -->
-    <section class="section__home">  
+    <section class="section__home">
         <a href="#">
             <img src="assets/images/headerbackground.png" alt="Image">
-        </a> 
+        </a>
     </section>
-    
+
     <!-- Section Plans -->
 
     <section class="section__plans">
         <div class="subheading__section">
             <h3>Nosso Planos</h3>
-            <div class="line"></div>
+            <div class="line__text"></div>
         </div>
 
-        <div class="plans__container">
-            <div class="container__card">
-                <div class="premium__offer">
-                    <span>PLANO 800MB PREMIUM</span>
-                </div>
-                <div class="card__plans">
-                    <div class="subscribenow">
-                        <span>ASSINE AGORA!</span>
-                    </div>
-                
-                    <div class="speed">
-                        <span class="speed__text">800 MEGA</span>
-                    </div>
-
-                    <div class="price">
-                        <span>Por Apenas</span>
-                        <div class="price__card">
-                            <span class="small_text">R$</span>
-                            <span class="price__number">109,90</span>
-                            <span class="small_text">/mês</span>
-                        </div>
-                        <div class="benefits">
-                            <span>Beneficios Inclusos:</span>
-                        </div>
-                    </div>
-
-                    <div class="benefits__container">
-                        <div class="infors">
-                            <div class="texts">
+        <div class="main">
+            <article class="container__card ">
+                <div class="card">
+                    <div class="top__infor">
+                        <div class="text__top">
+                            <div class="icon">
                                 <i class="ri-wifi-line"></i>
-                                <span>Wi-Fi Premium</span>
                             </div>
-                            <div class="texts">
-                                <i class="ri-router-line"></i>
-                                <span>Ponto Adicional</span>
-                            </div>
-                            <div class="texts">
-                                <i class="ri-upload-line"></i>
-                                <span>100% Download</span>
-                            </div>
-                            <div class="texts">
-                                <i class="ri-download-line"></i>
-                                <span>100% Upload</span>
-                            </div>
-
-                            <div class="button__card">
-                                <a href="#" class="button__subscribenow">Assine Já!</a>
+                            <span>INTERNET</span>
+                        </div>
+                        <div class="speed__text">
+                            <p>800MEGA</p>
+                            <div class="line"></div>
+                        </div>
+                        <ul class="benefits__text">
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-tools-line"></i>
+                                </div>
+                                Instalação Grátis
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-git-fork-line"></i>
+                                </div>
+                                100% Fibra Óptica
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-wifi-line"></i>
+                                </div>
+                                Wi-Fi De Alta Perfomance
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-download-cloud-line"></i>
+                                </div>
+                                Donwload 800Mbps
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-upload-cloud-line"></i>
+                                </div>
+                                Upload 800Mbps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom__infor">
+                        <div class="more">
+                            <button class="text__more">
+                                Mais Detalhes
+                                <div class="icon__more">
+                                    <i class="ri-add-circle-line"></i>
+                                </div>
+                            </button>
+                            <div class="price">
+                                <p>
+                                    R$
+                                    <strong class="price__number">110,00</strong>
+                                    /mês
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <button class="btn__offer">
+                    Aproveitar Oferta
+                </button>
+            </article>
 
-            <div class="container__card">
-                <div class="premium__offer">
-                    <span>PLANO 600MB PREMIUM</span>
-                </div>
-                <div class="card__plans">
-                    <div class="subscribenow">
-                        <span>ASSINE AGORA!</span>
-                    </div>
-                
-                    <div class="speed">
-                        <span class="speed__text">600 MEGA</span>
-                    </div>
-
-                    <div class="price">
-                        <span>Por Apenas</span>
-                        <div class="price__card">
-                            <span class="small_text">R$</span>
-                            <span class="price__number">99,90</span>
-                            <span class="small_text">/mês</span>
-                        </div>
-                        <div class="benefits">
-                            <span>Beneficios Inclusos:</span>
-                        </div>
-                    </div>
-
-                    <div class="benefits__container">
-                        <div class="infors">
-                            <div class="texts">
+            <article class="container__card ">
+                <div class="card">
+                    <div class="top__infor">
+                        <div class="text__top">
+                            <div class="icon">
                                 <i class="ri-wifi-line"></i>
-                                <span>Wi-Fi Premium</span>
                             </div>
-                            <div class="texts">
-                                <i class="ri-router-line"></i>
-                                <span>Ponto Adicional</span>
-                            </div>
-                            <div class="texts">
-                                <i class="ri-upload-line"></i>
-                                <span>100% Download</span>
-                            </div>
-                            <div class="texts">
-                                <i class="ri-download-line"></i>
-                                <span>100% Upload</span>
-                            </div>
-
-                            <div class="button__card">
-                                <a href="#" class="button__subscribenow">Assine Já!</a>
+                            <span>INTERNET</span>
+                        </div>
+                        <div class="speed__text">
+                            <p>800MEGA</p>
+                            <div class="line"></div>
+                        </div>
+                        <ul class="benefits__text">
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-tools-line"></i>
+                                </div>
+                                Instalação Grátis
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-git-fork-line"></i>
+                                </div>
+                                100% Fibra Óptica
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-wifi-line"></i>
+                                </div>
+                                Wi-Fi De Alta Perfomance
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-download-cloud-line"></i>
+                                </div>
+                                Donwload 800Mbps
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-upload-cloud-line"></i>
+                                </div>
+                                Upload 800Mbps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom__infor">
+                        <div class="more">
+                            <button class="text__more">
+                                Mais Detalhes
+                                <div class="icon__more">
+                                    <i class="ri-add-circle-line"></i>
+                                </div>
+                            </button>
+                            <div class="price">
+                                <p>
+                                    R$
+                                    <strong class="price__number">110,00</strong>
+                                    /mês
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <button class="btn__offer">
+                    Aproveitar Oferta
+                </button>
+            </article>
 
-            <div class="container__card">
-                <div class="premium__offer">
-                    <span>PLANO 400MB PREMIUM</span>
-                </div>
-                <div class="card__plans">
-                    <div class="subscribenow">
-                        <span>ASSINE AGORA!</span>
-                    </div>
-                
-                    <div class="speed">
-                        <span class="speed__text">400 MEGA</span>
-                    </div>
-
-                    <div class="price">
-                        <span>Por Apenas</span>
-                        <div class="price__card">
-                            <span class="small_text">R$</span>
-                            <span class="price__number">79,90</span>
-                            <span class="small_text">/mês</span>
-                        </div>
-                        <div class="benefits">
-                            <span>Beneficios Inclusos:</span>
-                        </div>
-                    </div>
-
-                    <div class="benefits__container">
-                        <div class="infors">
-                            <div class="texts">
+            <article class="container__card ">
+                <div class="card">
+                    <div class="top__infor">
+                        <div class="text__top">
+                            <div class="icon">
                                 <i class="ri-wifi-line"></i>
-                                <span>Wi-Fi Premium</span>
                             </div>
-                            <div class="texts">
-                                <i class="ri-upload-line"></i>
-                                <span>100% Download</span>
-                            </div>
-                            <div class="texts">
-                                <i class="ri-download-line"></i>
-                                <span>100% Upload</span>
-                            </div>
-
-                            <div class="texts" style="visibility: hidden;">
-                                <i class="ri-router-line"></i>
-                                <span>Ponto Adicional</span>
-                            </div>
-
-                            <div class="button__card">
-                                <a href="#" class="button__subscribenow">Assine Já!</a>
+                            <span>INTERNET</span>
+                        </div>
+                        <div class="speed__text">
+                            <p>800MEGA</p>
+                            <div class="line"></div>
+                        </div>
+                        <ul class="benefits__text">
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-tools-line"></i>
+                                </div>
+                                Instalação Grátis
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-git-fork-line"></i>
+                                </div>
+                                100% Fibra Óptica
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-wifi-line"></i>
+                                </div>
+                                Wi-Fi De Alta Perfomance
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-download-cloud-line"></i>
+                                </div>
+                                Donwload 800Mbps
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-upload-cloud-line"></i>
+                                </div>
+                                Upload 800Mbps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom__infor">
+                        <div class="more">
+                            <button class="text__more">
+                                Mais Detalhes
+                                <div class="icon__more">
+                                    <i class="ri-add-circle-line"></i>
+                                </div>
+                            </button>
+                            <div class="price">
+                                <p>
+                                    R$
+                                    <strong class="price__number">110,00</strong>
+                                    /mês
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <button class="btn__offer">
+                    Aproveitar Oferta
+                </button>
+            </article>
 
-            <div class="container__card">
-                <div class="premium__offer">
-                    <span>PLANO 300MB PREMIUM</span>
-                </div>
-                <div class="card__plans">
-                    <div class="subscribenow">
-                        <span>ASSINE AGORA!</span>
-                    </div>
-                
-                    <div class="speed">
-                        <span class="speed__text">300 MEGA</span>
-                    </div>
-
-                    <div class="price">
-                        <span>Por Apenas</span>
-                        <div class="price__card">
-                            <span class="small_text">R$</span>
-                            <span class="price__number">69,90</span>
-                            <span class="small_text">/mês</span>
-                        </div>
-                        <div class="benefits">
-                            <span>Beneficios Inclusos:</span>
-                        </div>
-                    </div>
-
-                    <div class="benefits__container">
-                        <div class="infors">
-                            <div class="texts">
+            <article class="container__card ">
+                <div class="card">
+                    <div class="top__infor">
+                        <div class="text__top">
+                            <div class="icon">
                                 <i class="ri-wifi-line"></i>
-                                <span>Wi-Fi Premium</span>
                             </div>
-                            <div class="texts">
-                                <i class="ri-upload-line"></i>
-                                <span>100% Download</span>
-                            </div>
-                            <div class="texts">
-                                <i class="ri-download-line"></i>
-                                <span>100% Upload</span>
-                            </div>
-                            <div class="texts" style="visibility: hidden;">
-                                <i class="ri-router-line"></i>
-                                <span>Ponto Adicional</span>
-                            </div>
-
-                            <div class="button__card">
-                                <a href="#" class="button__subscribenow">Assine Já!</a>
+                            <span>INTERNET</span>
+                        </div>
+                        <div class="speed__text">
+                            <p>800MEGA</p>
+                            <div class="line"></div>
+                        </div>
+                        <ul class="benefits__text">
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-tools-line"></i>
+                                </div>
+                                Instalação Grátis
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-git-fork-line"></i>
+                                </div>
+                                100% Fibra Óptica
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-wifi-line"></i>
+                                </div>
+                                Wi-Fi De Alta Perfomance
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-download-cloud-line"></i>
+                                </div>
+                                Donwload 800Mbps
+                            </li>
+                            <li class="list__text">
+                                <div class="icon__benefits">
+                                    <i class="ri-upload-cloud-line"></i>
+                                </div>
+                                Upload 800Mbps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom__infor">
+                        <div class="more">
+                            <button class="text__more">
+                                Mais Detalhes
+                                <div class="icon__more">
+                                    <i class="ri-add-circle-line"></i>
+                                </div>
+                            </button>
+                            <div class="price">
+                                <p>
+                                    R$
+                                    <strong class="price__number">110,00</strong>
+                                    /mês
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <button class="btn__offer">
+                    Aproveitar Oferta
+                </button>
+            </article>
         </div>
     </section>
 
@@ -264,7 +334,7 @@
     <section class="section__about">
         <div class="subheading__section">
             <h3>Sobre</h3>
-            <div class="line"></div>
+            <div class="line__text"></div>
         </div>
         <div class="container__section-about">
             <div class="left__content-image">
@@ -275,7 +345,11 @@
             <div class="right__content-text">
                 <div class="text">
                     <h2>Net Evolution</h2>
-                    <p>A Net Evolution está há mais de 6 anos oferecendo os melhores planos de internet banda larga. Você tem conexão ultra rápida via fibra óptica para navegar em redes sociais, plataformas de streaming, assistir a vídeos e filmes e séries sem travar. Experimente um de nossos planos de internet fibra óptica! Muito mais velocidade e estabilidade para você navegar, transmitir e fazer muito mais com menos interrupções.</p>
+                    <p>A Net Evolution está há mais de 6 anos oferecendo os melhores planos de internet banda larga.
+                        Você tem conexão ultra rápida via fibra óptica para navegar em redes sociais, plataformas de
+                        streaming, assistir a vídeos e filmes e séries sem travar. Experimente um de nossos planos de
+                        internet fibra óptica! Muito mais velocidade e estabilidade para você navegar, transmitir e
+                        fazer muito mais com menos interrupções.</p>
                 </div>
                 <div class="line__bottom"></div>
             </div>
@@ -286,5 +360,7 @@
 
     <!-- Script JS -->
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 </body>
+
 </html>
