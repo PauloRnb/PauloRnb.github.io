@@ -1,535 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa Netevolution | Site Oficial</title>
+    <title>Project Landing Page</title>
 
-    <!--========== LINK TO CSS ==========-->
+    <!-- LINK TO CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
 
-    <!--========== LINK TO ICONS ==========-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
-
 <body>
-    <header class="header__top">
-        <nav class="navigation__menu">
-            <a href="#" class="logo__link">
 
+    <header class="header container">
+        <!-- NAVIGATION -->
+        <nav class="navigation">
+            <a href="#" class="logo__link">
+                <span>Serendale</span>
             </a>
+
+            <!-- MENU -->
+            <div class="card__menu-mobile" id="card-menu">
+                <ul class="list__menu">
+                    <li><a href="#">Smart Contracts</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Solutions</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                    <li><a href="#">Whitepaper</a></li>
+                </ul>
+
+                <div class="close__menu-mobile" id="menu-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="socials">
+                <div class="icons"><a href="#"><i class='bx bxl-github'></i></a></div>
+                <div class="icons"><a href=""><i class='bx bxl-discord-alt'></i></a></div>
+                <div class="icons"><a href=""><i class='bx bxl-reddit'></i></a></div>
+                <div class="icons"><a href=""><i class='bx bxl-twitter'></i></a></div>
+            </div>
+
+            <div class="toggle__menu-mobile" id="menu-mobile">
+                <i class='bx bx-menu'></i>
+            </div>
         </nav>
     </header>
-    
 
-
-    <main class="main__container">
-        <section class="section__offer-card">
-            <div class="items__offer container">
-                <div class="text__top-offer">
-                    <h2>APROVEITE NOSSAS OFERTAS</h2>
-                </div>
-                <div class="section__card">
-                    <!-- CARD 1 -->
-                    <div class="card__offer">
-                        <article class="card">
-                            <!-- ITEMS BG BLUE -->
-                            <div class="offer">
-                                <h2>MELHOR OFERTA</h2>
-                            </div>
-                            <div class="bg__offer">
-                            </div>
-                            <!-- ITEMS HEADER -->
-                            <header class="top__items">
-                                <div class="top">
-                                    <div class="top__items-mega">
-                                        <div class="text__top">
-                                            <p>600MEGA</p>
-                                        </div>
-                                        <div class="line__top"></div>
-                                    </div>
-                                </div>
-                                <div class="benefits">
-                                    <div>
-                                        <div>
-                                            <ul class="items__benefits">
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/desconto.svg" alt="icon"></div>
-                                                    Instalação Inclusa
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/fibra.svg" alt="icon"></div>
-                                                    100% Fibra Óptica
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/wifi.svg" alt="icon"></div>
-                                                    Wi-Fi de alta perfomance
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img width="18px" height="18px" src="assets/images/download.svg" alt="icon"></div>
-                                                    Download 600Mbps
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img width="18px" height="18px" src="assets/images/upload.svg" alt="icon"></div>
-                                                    Upload 550Mbps
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="products__items">
-                                        <div class="products">
-                                            <p>Produtos Inclusos:</p>
-                                            <ul class="products__list">
-                                                <li>
-                                                    <button>
-                                                        <img src="assets/images/skeelo.svg" alt="icon">
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </header>
-                            <!-- ITEMS FOOTER -->
-                            <footer class="bottom__items">
-                                <button>
-                                    Mais detalhes
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" fill="none"
-                                        class="dark:group-hover:stroke-yellow-60 ml-1 size-4 text-orange-500 group-hover:text-orange-600 dark:text-yellow-200 dark:group-hover:text-yellow-500">
-                                        <circle cx="6.5" cy="6.5" r="5.9" stroke="currentColor" fill="none" stroke-width="1.2">
-                                        </circle>
-                                        <path
-                                            d="M9.5625 5.9625H7.0375V3.4375C7.0375 3.29495 6.98087 3.15823 6.88007 3.05743C6.77927 2.95663 6.64255 2.9 6.5 2.9C6.35745 2.9 6.22073 2.95663 6.11993 3.05743C6.01913 3.15823 5.9625 3.29495 5.9625 3.4375V5.9625H3.4375C3.29495 5.9625 3.15823 6.01913 3.05743 6.11993C2.95663 6.22073 2.9 6.35745 2.9 6.5C2.9 6.64255 2.95663 6.77927 3.05743 6.88007C3.15823 6.98087 3.29495 7.0375 3.4375 7.0375H5.9625V9.5625C5.9625 9.70505 6.01913 9.84177 6.11993 9.94257C6.22073 10.0434 6.35745 10.1 6.5 10.1C6.64255 10.1 6.77927 10.0434 6.88007 9.94257C6.98087 9.84177 7.0375 9.70505 7.0375 9.5625V7.0375H9.5625C9.70505 7.0375 9.84177 6.98087 9.94257 6.88007C10.0434 6.77927 10.1 6.64255 10.1 6.5C10.1 6.35745 10.0434 6.22073 9.94257 6.11993C9.84177 6.01913 9.70505 5.9625 9.5625 5.9625Z"
-                                            fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
-                                    </svg>
-                                </button>
-                                <p>R$<strong class="big__price">99,99</strong>/mês</p>
-                            </footer>
-                            <button class="offer__click">
-                                <span>Aproveitar oferta</span>
-                            </button>
-                        </article>
-                    </div>
-                    <!-- CARD 2 -->
-                    <div class="card__offer">
-                        <article class="card">
-                            <!-- ITEMS BG BLUE -->
-                            <div class="bg__blue-offer">
-                                <div class="offer">
-                                    <h2>MELHOR OFERTA</h2>
-                                </div>
-                                <div class="bg__offer">
-                                </div>
-                            </div>
-                            <!-- ITEMS HEADER -->
-                            <div class="top__full-header">
-                                <span>
-                                    <img src="assets/images/wifi.svg" alt="icon">
-                                    <p>INTERNET</p>
-                                </span>
-                            </div>
-                            <header class="top__items">
-                                <div class="top">
-                                    <div class="top__items-mega">
-                                        <div class="text__top">
-                                            <p>500MEGA</p>
-                                        </div>
-                                        <div class="line__top"></div>
-                                    </div>
-                                </div>
-                                <div class="benefits">
-                                    <div>
-                                        <div>
-                                            <ul class="items__benefits">
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/desconto.svg" alt="icon"></div>
-                                                    Instalação Inclusa
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/fibra.svg" alt="icon"></div>
-                                                    100% Fibra Óptica
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/wifi.svg" alt="icon"></div>
-                                                    Wi-Fi de alta perfomance
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img width="18px" height="18px" src="assets/images/download.svg" alt="icon"></div>
-                                                    Download 500Mbps
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img width="18px" height="18px" src="assets/images/upload.svg" alt="icon"></div>
-                                                    Upload 450Mbps
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="products__items">
-                                        <div class="products">
-                                            <p>Produtos Inclusos:</p>
-                                            <ul class="products__list">
-                                                <li>
-                                                    <button>
-                                                        <img src="assets/images/skeelo.svg" alt="icon">
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </header>
-                            <!-- ITEMS FOOTER -->
-                            <footer class="bottom__items">
-                                <button>
-                                    Mais detalhes
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" fill="none"
-                                        class="dark:group-hover:stroke-yellow-60 ml-1 size-4 text-orange-500 group-hover:text-orange-600 dark:text-yellow-200 dark:group-hover:text-yellow-500">
-                                        <circle cx="6.5" cy="6.5" r="5.9" stroke="currentColor" fill="none" stroke-width="1.2">
-                                        </circle>
-                                        <path
-                                            d="M9.5625 5.9625H7.0375V3.4375C7.0375 3.29495 6.98087 3.15823 6.88007 3.05743C6.77927 2.95663 6.64255 2.9 6.5 2.9C6.35745 2.9 6.22073 2.95663 6.11993 3.05743C6.01913 3.15823 5.9625 3.29495 5.9625 3.4375V5.9625H3.4375C3.29495 5.9625 3.15823 6.01913 3.05743 6.11993C2.95663 6.22073 2.9 6.35745 2.9 6.5C2.9 6.64255 2.95663 6.77927 3.05743 6.88007C3.15823 6.98087 3.29495 7.0375 3.4375 7.0375H5.9625V9.5625C5.9625 9.70505 6.01913 9.84177 6.11993 9.94257C6.22073 10.0434 6.35745 10.1 6.5 10.1C6.64255 10.1 6.77927 10.0434 6.88007 9.94257C6.98087 9.84177 7.0375 9.70505 7.0375 9.5625V7.0375H9.5625C9.70505 7.0375 9.84177 6.98087 9.94257 6.88007C10.0434 6.77927 10.1 6.64255 10.1 6.5C10.1 6.35745 10.0434 6.22073 9.94257 6.11993C9.84177 6.01913 9.70505 5.9625 9.5625 5.9625Z"
-                                            fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
-                                    </svg>
-                                </button>
-                                <p>R$<strong class="big__price">89,99</strong>/mês</p>
-                            </footer>
-                            <button class="offer__click">
-                                <span>Aproveitar oferta</span>
-                            </button>
-                        </article>
-                    </div>
-                    <!-- CARD 3 -->
-                    <div class="card__offer">
-                        <article class="card">
-                            <!-- ITEMS BG BLUE -->
-                            <div class="bg__blue-offer" style="display: none;">
-                                <div class="offer">
-                                    <h2>MELHOR OFERTA</h2>
-                                </div>
-                                <div class="bg__offer">
-                                </div>
-                            </div>
-                            <!-- ITEMS HEADER -->
-                            <div class="top__full-header">
-                                <span>
-                                    <img src="assets/images/wifi.svg" alt="icon">
-                                    <p>INTERNET</p>
-                                </span>
-                            </div>
-                            <header class="top__items">
-                                <div class="top">
-                                    <div class="top__items-mega">
-                                        <div class="text__top">
-                                            <p>400MEGA</p>
-                                        </div>
-                                        <div class="line__top"></div>
-                                    </div>
-                                </div>
-                                <div class="benefits">
-                                    <div>
-                                        <div>
-                                            <ul class="items__benefits">
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/desconto.svg" alt="icon"></div>
-                                                    Instalação Inclusa
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/fibra.svg" alt="icon"></div>
-                                                    100% Fibra Óptica
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/wifi.svg" alt="icon"></div>
-                                                    Wi-Fi de alta perfomance
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img width="18px" height="18px" src="assets/images/download.svg" alt="icon"></div>
-                                                    Download 400Mbps
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img width="18px" height="18px" src="assets/images/upload.svg" alt="icon"></div>
-                                                    Upload 350Mbps
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="products__items">
-                                        <div class="products">
-                                            <p>Produtos Inclusos:</p>
-                                            <ul class="products__list">
-                                                <li>
-                                                    <button>
-                                                        <img src="assets/images/skeelo.svg" alt="icon">
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </header>
-                            <!-- ITEMS FOOTER -->
-                            <footer class="bottom__items">
-                                <button>
-                                    Mais detalhes
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" fill="none"
-                                        class="dark:group-hover:stroke-yellow-60 ml-1 size-4 text-orange-500 group-hover:text-orange-600 dark:text-yellow-200 dark:group-hover:text-yellow-500">
-                                        <circle cx="6.5" cy="6.5" r="5.9" stroke="currentColor" fill="none" stroke-width="1.2">
-                                        </circle>
-                                        <path
-                                            d="M9.5625 5.9625H7.0375V3.4375C7.0375 3.29495 6.98087 3.15823 6.88007 3.05743C6.77927 2.95663 6.64255 2.9 6.5 2.9C6.35745 2.9 6.22073 2.95663 6.11993 3.05743C6.01913 3.15823 5.9625 3.29495 5.9625 3.4375V5.9625H3.4375C3.29495 5.9625 3.15823 6.01913 3.05743 6.11993C2.95663 6.22073 2.9 6.35745 2.9 6.5C2.9 6.64255 2.95663 6.77927 3.05743 6.88007C3.15823 6.98087 3.29495 7.0375 3.4375 7.0375H5.9625V9.5625C5.9625 9.70505 6.01913 9.84177 6.11993 9.94257C6.22073 10.0434 6.35745 10.1 6.5 10.1C6.64255 10.1 6.77927 10.0434 6.88007 9.94257C6.98087 9.84177 7.0375 9.70505 7.0375 9.5625V7.0375H9.5625C9.70505 7.0375 9.84177 6.98087 9.94257 6.88007C10.0434 6.77927 10.1 6.64255 10.1 6.5C10.1 6.35745 10.0434 6.22073 9.94257 6.11993C9.84177 6.01913 9.70505 5.9625 9.5625 5.9625Z"
-                                            fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
-                                    </svg>
-                                </button>
-                                <p>R$<strong class="big__price">79,99</strong>/mês</p>
-                            </footer>
-                            <button class="offer__click">
-                                <span>Aproveitar oferta</span>
-                            </button>
-                        </article>
-                    </div>
-                    <!-- CARD 4 -->
-                    <div class="card__offer">
-                        <article class="card">
-                            <!-- ITEMS BG BLUE -->
-                            <div class="bg__blue-offer">
-                                <div class="offer">
-                                    <h2>MELHOR OFERTA</h2>
-                                </div>
-                                <div class="bg__offer">
-                                </div>
-                            </div>
-                            <!-- ITEMS HEADER -->
-                            <div class="top__full-header">
-                                <span>
-                                    <img src="assets/images/wifi.svg" alt="icon">
-                                    <p>INTERNET</p>
-                                </span>
-                            </div>
-                            <header class="top__items">
-                                <div class="top">
-                                    <div class="top__items-mega">
-                                        <div class="text__top">
-                                            <p>300MEGA</p>
-                                        </div>
-                                        <div class="line__top"></div>
-                                    </div>
-                                </div>
-                                <div class="benefits">
-                                    <div>
-                                        <div>
-                                            <ul class="items__benefits">
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/desconto.svg" alt="icon"></div>
-                                                    Instalação Inclusa
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/fibra.svg" alt="icon"></div>
-                                                    100% Fibra Óptica
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img src="assets/images/wifi.svg" alt="icon"></div>
-                                                    Wi-Fi de alta perfomance
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img width="18px" height="18px" src="assets/images/download.svg" alt="icon"></div>
-                                                    Download 300Mbps
-                                                </li>
-                                                <li>
-                                                    <div class="icons__items"><img width="18px" height="18px" src="assets/images/upload.svg" alt="icon"></div>
-                                                    Upload 250Mbps
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="products__items">
-                                        <div class="products">
-                                            <p>Produtos Inclusos:</p>
-                                            <ul class="products__list">
-                                                <li>
-                                                    <button>
-                                                        <img src="assets/images/skeelo.svg" alt="icon">
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </header>
-                            <!-- ITEMS FOOTER -->
-                            <footer class="bottom__items">
-                                <button>
-                                    Mais detalhes
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" fill="none"
-                                        class="dark:group-hover:stroke-yellow-60 ml-1 size-4 text-orange-500 group-hover:text-orange-600 dark:text-yellow-200 dark:group-hover:text-yellow-500">
-                                        <circle cx="6.5" cy="6.5" r="5.9" stroke="currentColor" fill="none" stroke-width="1.2">
-                                        </circle>
-                                        <path
-                                            d="M9.5625 5.9625H7.0375V3.4375C7.0375 3.29495 6.98087 3.15823 6.88007 3.05743C6.77927 2.95663 6.64255 2.9 6.5 2.9C6.35745 2.9 6.22073 2.95663 6.11993 3.05743C6.01913 3.15823 5.9625 3.29495 5.9625 3.4375V5.9625H3.4375C3.29495 5.9625 3.15823 6.01913 3.05743 6.11993C2.95663 6.22073 2.9 6.35745 2.9 6.5C2.9 6.64255 2.95663 6.77927 3.05743 6.88007C3.15823 6.98087 3.29495 7.0375 3.4375 7.0375H5.9625V9.5625C5.9625 9.70505 6.01913 9.84177 6.11993 9.94257C6.22073 10.0434 6.35745 10.1 6.5 10.1C6.64255 10.1 6.77927 10.0434 6.88007 9.94257C6.98087 9.84177 7.0375 9.70505 7.0375 9.5625V7.0375H9.5625C9.70505 7.0375 9.84177 6.98087 9.94257 6.88007C10.0434 6.77927 10.1 6.64255 10.1 6.5C10.1 6.35745 10.0434 6.22073 9.94257 6.11993C9.84177 6.01913 9.70505 5.9625 9.5625 5.9625Z"
-                                            fill="currentColor" stroke="currentColor" stroke-width="0.2"></path>
-                                    </svg>
-                                </button>
-                                <p>R$<strong class="big__price">69,99</strong>/mês</p>
-                            </footer>
-                            <button class="offer__click">
-                                <span>Aproveitar oferta</span>
-                            </button>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section__packages">
-            <div class="items__bg container">
-                <div class="packages__items">
-                    <!-- LEFT PACKAGES -->
-                    <div class="left__packages">
-                        <h2 class="text__packages-left">APROVEITE NOSSAS OFERTAS <span class="relative__line">EXCLUSIVAS<span class="absolute__line"></span></span> EM FORMA DE COMBOS</h2>
-                        <a href="#" class="button__offer-packages">Conhecer as ofertas</a>
-                    </div>
-                    <!-- RIGHT PACKAGES -->
-                    <div class="right__packages">
-                        <div class="items__right-packages">
-                            <!-- ITEM 1 -->
-                            <div class="items__packages">
-                                <div class="image__packages">
-                                    <img src="assets/images/homemcomconsole.png" alt="image">
-                                </div>
-                                <div class="text__packages">
-                                    <h3>Internet</h3>
-                                    <div class="line__packages"></div>
-                                    <p>Serviços de internet 100% fibra óptica.</p>
-                                </div>
-                            </div>
-                            <!-- ITEM 2 -->
-                            <div class="items__packages">
-                                <div class="image__packages">
-                                    <img src="assets/images/homemcomsmarphoneheadset.png" alt="image">
-                                </div>
-                                <div class="text__packages">
-                                    <h3>Entretenimento</h3>
-                                    <div class="line__packages"></div>
-                                    <p>Serviços de streaming de filmes, canais ao vivo, músicas e mais.</p>
-                                </div>
-                            </div>
-                            <!-- ITEM 3 -->
-                            <div class="items__packages">
-                                <div class="image__packages">
-                                    <img src="assets/images/homemcomsmartphone.png" alt="image">
-                                </div>
-                                <div class="text__packages">
-                                    <h3>Telefonia</h3>
-                                    <div class="line__packages"></div>
-                                    <p>Serviço de telefonia móvel 5G e fixo, para você falar a vontade.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="#" class="button__offer-packages-none">Conhecer as ofertas</a>
-
-                        <div class="more__icon">
-                            <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[1.625rem] w-[1.625rem] text-orange-400 dark:text-white"><rect x="11.9131" y="25.3864" width="24.5178" height="2.28073" rx="1.14036" transform="rotate(-90 11.9131 25.3864)" fill="currentColor"></rect><rect x="0.509766" y="12.272" width="24.5178" height="2.28073" rx="1.14036" fill="currentColor"></rect></svg>
-
-                            <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[1.625rem] w-[1.625rem] text-orange-400 dark:text-white"><rect x="11.9131" y="25.3864" width="24.5178" height="2.28073" rx="1.14036" transform="rotate(-90 11.9131 25.3864)" fill="currentColor"></rect><rect x="0.509766" y="12.272" width="24.5178" height="2.28073" rx="1.14036" fill="currentColor"></rect></svg>
+    <!-- MAIN SECTION -->
+    <main class="main">
+        <section class="section content">
+            <div class="content__items-page">
+                <div class="items__section container">
+                    <div class="text__content">
+                        <h1>A Fast Blockchain. <br> <span class="sub__title">Scalable AI.</span></h1>
+                        <p>Our technology performing fast blockchain (120K TPS) and it has guaranteed AI-based data security. Proof of Stake, its consensus algorithm enables unlimited speeds.</p>
+                        <div class="buttons">
+                            <a href="#" class="active"><span>Get starte</span></a>
+                            <a href="#" class="btn">Ecosystems</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="section__services">
-            <div class="services container">
-                <div class="text__top-offer">
-                    <h2>CONHEÇA NOSSOS SERVIÇOS</h2>
-                    <p>A Netevolution tem diversas novidades para você e sua família aproveitar</p>
-                </div>
-                <div class="items__services">
-                    <!-- CARD 1 -->
-                    <div class="card__services">
-                        <div class="card__items">
-                            <div class="img__badge">
-                                <img src="assets/images/support.png" alt="image">
-                            </div>
-                            <div class="text__connect">
-                                <h3>Suporte Humanizado</h3>
-                                <div class="line__conecta"></div>
-                                <p>Suporte rápido e fácil, 100% humanizado!</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn__connect">
-                            <p>Quero conhecer</p>
-                    
-                            <svg id="conhecerconecta-ic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-6 text-white dark:text-gray-800"><path d="M4.16675 10H15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 4.16675L15.8333 10.0001L10 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                        </a>
-                    </div>
-                    <!-- CARD 2 -->
-                    <div class="card__services">
-                        <div class="card__items">
-                            <div class="img__badge">
-                                <img src="assets/images/music.png" alt="image">
-                            </div>
-                            <div class="text__connect">
-                                <h3>Musica Plus</h3>
-                                <div class="line__conecta"></div>
-                                <p>Ouça suas músicas preferidas sem interrupções.</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn__connect">
-                            <p>Quero conhecer</p>
-                    
-                            <svg id="conhecerconecta-ic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-6 text-white dark:text-gray-800"><path d="M4.16675 10H15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 4.16675L15.8333 10.0001L10 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                        </a>
-                    </div>
-                    <!-- CARD 3 -->
-                    <div class="card__services">
-                        <div class="card__items">
-                            <div class="img__badge">
-                                <img src="assets/images/films.png" alt="image">
-                            </div>
-                            <div class="text__connect">
-                                <h3>Filmes e Séries</h3>
-                                <div class="line__conecta"></div>
-                                <p>Assista seus filmes e séries sem travamentos.</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn__connect">
-                            <p>Quero conhecer</p>
-                    
-                            <svg id="conhecerconecta-ic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-6 text-white dark:text-gray-800"><path d="M4.16675 10H15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 4.16675L15.8333 10.0001L10 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                        </a>
-                    </div>
-                    <!-- CARD 4 -->
-                    <div class="card__services">
-                        <div class="card__items">
-                            <div class="img__badge">
-                                <img src="assets/images/connect.png" alt="image">
-                            </div>
-                            <div class="text__connect">
-                                <h3>Conecta Plus</h3>
-                                <div class="line__conecta"></div>
-                                <p>Serviço de cabeamento estruturado.</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn__connect">
-                            <p>Quero conhecer</p>
-                    
-                            <svg id="conhecerconecta-ic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="size-6 text-white dark:text-gray-800"><path d="M4.16675 10H15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10 4.16675L15.8333 10.0001L10 15.8334" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                        </a>
-                    </div>
-                </div>
+                <img class="image__bg" src="assets/images/background.png" alt="image">
             </div>
         </section>
     </main>
-
-
-
-
-
-
-
-    <!--========== LINK TO JS ==========-->
-    <script src=""></script>
+    
+    <!-- SCRIPT JS -->
+    <script src="assets/js/index.js"></script>
 </body>
-
 </html>
