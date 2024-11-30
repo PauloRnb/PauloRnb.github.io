@@ -1,17 +1,19 @@
-const navigationMenu = document.getElementById('card-menu'),
-      toggleNav = document.getElementById('menu-mobile'),
-      closeNav = document.getElementById('menu-close')
+var navMenu = document.getElementById('card-menu'),
+    toggleMenu = document.getElementById('toggle-menu'),
+    closeMenu = document.getElementById('close-menu')
 
-/* Menu Show */
-if(toggleNav) {
-    toggleNav.addEventListener('click', () => {
-        navigationMenu.classList.add('menu-show')
+// Show Menu
+if (toggleMenu) {
+    toggleMenu.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
     })
 }
 
-/* Menu Hidden */
-if(closeNav) {
-    closeNav.addEventListener('click', () => {
-        navigationMenu.classList.remove('menu-show')
+// Hidden Menu
+if(closeMenu) {
+    closeMenu.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
     })
 }
+
+    

@@ -1,73 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Landing Page</title>
-
+    <title>Naldo Locações | Fonecedor de equipamentos comerciais e industriais</title>
     <!-- LINK TO CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
-
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- LINK TO ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
+
 <body>
-
-    <header class="header container">
-        <!-- NAVIGATION -->
+    <!-- HEADER -->
+    <header class="header">
+        <!-- NAV -->
         <nav class="navigation">
-            <a href="#" class="logo__link">
-                <span>Serendale</span>
-            </a>
+            <div class="items__nav container">
+                <!-- LOGO -->
+                <a href="#" class="logo__link">
+                    <span class="logo">Naldo Locações</span>
+                </a>
+                <!-- CARD MENU & LIST -->
+                <div class="card__menu" id="card-menu">
+                    <ul class="list__menu">
+                        <li><a href="#home" class="link">Home</a></li>
+                        <li><a href="#main-services" class="link">Main Services</a></li>
+                        <li><a href="#services" class="link">Services</a></li>
+                        <li><a href="#contact" class="link">Contact</a></li>
 
-            <!-- MENU -->
-            <div class="card__menu-mobile" id="card-menu">
-                <ul class="list__menu">
-                    <li><a href="#">Smart Contracts</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Roadmap</a></li>
-                    <li><a href="#">Whitepaper</a></li>
-                </ul>
-
-                <div class="close__menu-mobile" id="menu-close">
-                    <i class='bx bx-x'></i>
+                        <!-- BUTTON MOBILE -->
+                        <div class="button__mobile">
+                            <a href="#" class="btn">Faça Seu Orçamento!</a>
+                        </div>
+                    </ul>
+                    <!-- CLOSE MENU -->
+                    <div class="close__menu" id="close-menu">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+                <!-- BUTTON -->
+                <div class="button">
+                    <a href="#" class="btn">Faça Seu Orçamento!</a>
+                </div>
+                <!-- TOGGLE MENU -->
+                <div class="toggle__menu" id="toggle-menu">
+                    <i class="ri-menu-3-line"></i>
                 </div>
             </div>
-
-            <div class="socials">
-                <div class="icons"><a href="#"><i class='bx bxl-github'></i></a></div>
-                <div class="icons"><a href=""><i class='bx bxl-discord-alt'></i></a></div>
-                <div class="icons"><a href=""><i class='bx bxl-reddit'></i></a></div>
-                <div class="icons"><a href=""><i class='bx bxl-twitter'></i></a></div>
-            </div>
-
-            <div class="toggle__menu-mobile" id="menu-mobile">
-                <i class='bx bx-menu'></i>
-            </div>
         </nav>
+        <!-- BOTTOM NAV -->
+        <div class="bottom__nav">
+            <div class="items__bottom-nav container">
+                <!-- BUTTON CONTACTS 1 -->
+                <a href="#" class="contacts">
+                    <div class="icon">
+                        <i class="ri-mail-send-line"></i>
+                    </div>
+                    <div class="text__contacts">
+                        <p>Email:</p>
+                        <p class="active__text">exemplo@email.com</p>
+                    </div>
+                </a>
+                <!-- BUTTON CONTACTS 2 -->
+                <a href="#" class="contacts">
+                    <div class="icon">
+                        <i class="ri-phone-line"></i>
+                    </div>
+                    <div class="text__contacts">
+                        <p>Telefone:</p>
+                        <p class="active__text">+01 2345-6789</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </header>
-
-    <!-- MAIN SECTION -->
-    <main class="main">
-        <section class="section content">
-            <div class="content__items-page">
-                <div class="items__section container">
-                    <div class="text__content">
-                        <h1>A Fast Blockchain. <br> <span class="sub__title">Scalable AI.</span></h1>
-                        <p>Our technology performing fast blockchain (120K TPS) and it has guaranteed AI-based data security. Proof of Stake, its consensus algorithm enables unlimited speeds.</p>
-                        <div class="buttons">
-                            <a href="#" class="active"><span>Get starte</span></a>
-                            <a href="#" class="btn">Ecosystems</a>
+    <!-- SECTION HOME -->
+    <section class="home" id="home">
+        <div class="content__home container">
+            <!-- CARD HOME -->
+            <div class="card__home">
+                <!-- CONTENT CARD -->
+                <div class="content__card-home">
+                    <div class="top__text">
+                        <div class="icon">
+                            <i class="ri-tools-fill"></i>
+                        </div>
+                        <p>Fornecemos equipamentos profissionais de qualidade</p>
+                    </div>
+                    <h1 class="title__home">Comerciais e industriais</h1>
+                </div>
+                <div class="button__home">
+                    <a href="#" class="btn">Serviços</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION MAIN SERVICES -->
+    <section class="main__services" id="main-services">
+        <div class="content__main__services container">
+            <!-- TOP ITEMS MAIN SERVICES -->
+            <div class="content__top-services">
+                <h2 class="title__main__services">Principais Serviços</h2>
+                <p class="p__main">Fornecemos equipamentos profissionais e de alta qualidade para sua contrução, <br> venha fazer seu orçamento conosco, temos o melhor preço do mercado.</p>
+                <!-- CARD SERVICES ICON 1 -->
+                <div class="cards__container">
+                    <div class="content__main__services-icon">
+                        <div class="item__main__services">
+                            <div class="icon">
+                                <i class="ri-hotel-line"></i>
+                            </div>
+                            <p>Comercial</p>
+                        </div>
+                    </div>
+                    <!-- CARD SERVICES ICON 2 -->
+                    <div class="content__main__services-icon">
+                        <div class="item__main__services">
+                            <div class="icon">
+                                <i class="ri-home-gear-line"></i>
+                            </div>
+                            <p>Residencial</p>
+                        </div>
+                    </div>
+                    <!-- CARD SERVICES ICON 3 -->
+                    <div class="content__main__services-icon">
+                        <div class="item__main__services">
+                            <div class="icon">
+                                <i class="ri-building-2-line"></i>
+                            </div>
+                            <p>Industrial</p>
                         </div>
                     </div>
                 </div>
-                <img class="image__bg" src="assets/images/background.png" alt="image">
             </div>
-        </section>
-    </main>
-    
-    <!-- SCRIPT JS -->
+            <!-- BOTTOM ITEMS MAIN SERVICES -->
+            
+        </div>
+    </section>
+
+
+
+
+    <!-- LINK TO JS -->
     <script src="assets/js/index.js"></script>
 </body>
+
 </html>
