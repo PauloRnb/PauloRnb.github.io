@@ -1,0 +1,622 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Root */
+:root {
+    /* Colors */
+    --color-main: #000000;
+    --color-gray: #181818;
+    --color-orange: #FF4600;
+    --white: #FFFFFF;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* NAVIGATION 1 */
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-main);
+    padding: 1rem 1.5rem;
+
+    & .container-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* LOGO NAVIGATION 2 */
+.logo__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .logo {
+        width: 5rem;
+    }
+}
+
+/* LIST NAVIGATION 3 */
+.list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    & .links {
+        font-size: 0.938rem;
+        font-weight: 400;
+        line-height: 1.063rem;
+        color: var(--white);
+        transition: .4s;
+    }
+
+    & .links:hover {
+        color: #D4D4D4;
+    }
+}
+
+/* MENU MOBILE 4 */
+.close__menu,
+.toggle__menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & i {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        color: var(--white);
+        transition: .4s;
+    }
+
+    & i:hover {
+        color: #D4D4D4;
+    }
+}
+
+/* SOCIAL MEDIA 5 */
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--color-orange);
+    padding: .938rem 1.5rem;
+    border-radius: 9999px;
+
+    & .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        & i {
+            font-size: 0.938rem;
+            line-height: 1.063rem;
+            color: var(--white);
+            transition: .4s;
+        }
+
+        & i:hover {
+            color: #D4D4D4;
+        }
+    }
+}
+
+/* HOME SECTION */
+.home__section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.back__video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+.title__main-home {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.7rem;
+    text-align: center;
+    color: var(--white);
+    width: 100%;
+}
+
+/* ABOUT SECTION */
+.about__section {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.title__about-section {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contents__items-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.content__about {
+    display: flex;
+    align-items: flex-start;
+}
+
+.left__content {
+    width: 605px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    gap: 2rem;
+}
+
+.card__top-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cards {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+
+    & .icon__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: .25rem;
+
+        & i {
+            font-size: 1.7rem;
+            line-height: 1.9rem;
+            color: var(--color-orange);
+        }
+    }
+
+    & p {
+        font-size: .938rem;
+        color: var(--color-gray);
+        line-height: 1.2rem;
+        text-align: center;
+    }
+}
+
+.card__item-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-orange);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    gap: 1rem;
+
+    & .title__bottom-card {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: var(--white);
+    }
+
+    .list__bottom-card {
+        display: flex;
+        flex-direction: column;
+        gap: .45rem;
+
+        & .items__bottom-card {
+            font-size: 0.938rem;
+            line-height: 1rem;
+            color: var(--white);
+        }
+    }
+
+}
+
+.title__top-right {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+    color: var(--color-main);
+    margin-bottom: 1.4rem;
+}
+
+.p__top-right {
+    font-size: 0.938rem;
+    line-height: 1.5rem;
+    color: var(--color-gray);
+    margin-bottom: 1.4rem;
+}
+
+.emphasis__text {
+    font-weight: 700;
+    color: var(--color-orange);
+}
+
+.address__right {
+    font-size: 0.938rem;
+    color: var(--color-gray);
+    line-height: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.card__right {
+    & .title__right {
+        font-size: 1.1rem;
+        color: var(--color-main);
+        line-height: 1.3rem;
+        margin-bottom: .25rem;
+    }
+
+    & p {
+        font-size: 0.938rem;
+        line-height: 1.4rem;
+    }
+}
+
+/* ATTRACTIONS SECTION */
+.attractions__section {
+    background: var(--color-main);
+}
+
+.title__attraction {
+    font-size: 2.5rem;
+    color: var(--color-orange);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.content__attractions-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 455px);
+    gap: 1rem;
+    justify-content: center;
+    place-items: center;
+    gap: 1rem;
+}
+
+.cards__attractions {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & .image__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1 1 200px;
+        overflow: hidden;
+        border-radius: 1rem 1rem 0 0;
+
+        & img {
+            transition: 0.5s;
+            cursor: pointer;
+        }
+
+        & img:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    & .text__attractions-card {
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.text__attractions-card {
+    background: var(--color-gray);
+    border-left: 1px solid var(--color-orange);
+    border-right: 1px solid var(--color-orange);
+    border-bottom: 1px solid var(--color-orange);
+    padding: 1.5rem;
+
+
+    & .title__card-attractions {
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        color: var(--color-orange);
+    }
+
+    & .p__attractions-card {
+        font-size: 0.938rem;
+        font-weight: 300;
+        line-height: 1.3rem;
+        color: var(--white);
+        margin: 1rem 0;
+    }
+
+    & .button__card {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: auto;
+
+        & .more__button-card {
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            color: var(--white);
+            background: var(--color-orange);
+            border-radius: 1rem;
+            padding: .25rem 1.5rem;
+            transition: .5s;
+
+            & .icon__more-button {
+                color: var(--color-main);
+                margin-left: .25rem;
+            }
+        }
+
+        & .more__button-card:hover {
+            color: var(--color-orange);
+            background: var(--white);
+            transform: scale(1.1);
+        }
+    }
+}
+
+.button__section-attraction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    & .btn__attraction-section {
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: center;
+        color: var(--white);
+        background: var(--color-orange);
+        border-radius: 1rem;
+        padding: 1rem 1.5rem;
+        transition: .5s;
+    }
+
+    & .btn__attraction-section:hover {
+        color: var(--color-orange);
+        background: var(--white);
+        transform: scale(1.1);
+    }
+}
+
+
+/* MQ 1024px */
+@media screen and (max-width: 1024px) {
+    /* ABOUT SECTION */
+    .content__about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title__about-section {
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    .left__content {
+        width: 100%;
+        margin: 0 0 2.5rem 0;
+    }
+
+    .card__top-left {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 180px);
+        gap: 1rem;
+        place-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .cards {
+
+        & .icon__card {
+
+
+            & i {}
+        }
+
+        & p {}
+    }
+
+    .card__item-bottom {
+
+        & .title__bottom-card {}
+
+        .list__bottom-card {
+
+
+            & .items__bottom-card {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .title__top-right {
+        text-align: center;
+    }
+
+    .p__top-right {
+        text-align: center;
+    }
+
+    .emphasis__text {}
+
+    .address__right {
+        text-align: center;
+    }
+
+    .card__right {
+        text-align: center;
+
+        & .title__right {}
+
+        & p {}
+    }
+
+}
+
+
+/* MQ 768px */
+@media screen and (max-width: 768px) {
+    
+
+    /* CARD MOBILE */
+    .card__list-menu {
+        position: fixed;
+        top: 0;
+        right: -120%;
+        width: 70%;
+        height: 100%;
+        background: var(--color-main);
+        border-left: 2px solid var(--color-orange);
+        padding: 0 2.5rem;
+        z-index: 9;
+        transition: .6s;
+
+        & .list {
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 60%;
+        }
+    }
+
+    /* MENU MOBILE 4 */
+    .close__menu,
+    .toggle__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        & i {
+            font-size: 1.5rem;
+            line-height: 1.7rem;
+            color: var(--white);
+            transition: .4s;
+        }
+
+        & i:hover {
+            color: #D4D4D4;
+        }
+    }
+
+    .close__menu {
+        position: absolute;
+        top: 1.5rem;
+        right: 2.5rem;
+    }
+
+    .show-menu {
+        right: 0;
+    }
+
+    /* HOME SECTION */
+    .title__main-home {
+        font-size: 2rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: var(--white);
+        width: 100%;
+    }
+
+    /* ATTRACTIONS SECTION */
+    .attractions__section {
+        
+    }
+
+    .title__attraction {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .content__attractions-cards {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .cards__attractions {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & .image__cards {
+            
+
+            & img {
+                
+            }
+
+            & img:hover {
+                
+            }
+        }
+    }
+
+    .text__attractions-card {
+        
+
+        & .title__card-attractions {
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            color: var(--color-orange);
+        }
+
+        & .p__attractions-card {
+            font-size: 0.938rem;
+            font-weight: 300;
+            line-height: 1.3rem;
+            color: var(--white);
+            margin: 1rem 0;
+        }
+
+        & .button__card {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            & .more__button-card {
+                font-size: 1rem;
+                font-weight: 500;
+                color: var(--white);
+                background: var(--color-orange);
+                border-radius: 1rem;
+                padding: .25rem 1.5rem;
+
+                & .icon__more-button {
+                    color: #000000;
+                    margin-left: .25rem;
+                }
+            }
+        }
+    }
+}
