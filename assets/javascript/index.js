@@ -3,6 +3,10 @@ const swiper = new Swiper('.swiper', {
   // Optional parameters
   loop: true,
   grabCursor: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 
   // If we need pagination
   pagination: {
