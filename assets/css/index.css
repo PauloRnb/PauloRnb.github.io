@@ -47,9 +47,6 @@ img {
 
 /* Header / Navigation */
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
     background: var(--color-black);
     border-bottom: 2px solid var(--color-main);
 }
@@ -328,11 +325,6 @@ img {
         color: #ffae00;
     }
 }
-
-
-
-
-
 
 
 
