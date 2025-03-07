@@ -7,8 +7,11 @@
     <title>optelLINK | 100% Fibra Óptica</title>
     <!-- LINK TO CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- LINK TO ICONS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- LINK TO SWP -->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">-->
 
 </head>
 
@@ -155,12 +158,75 @@
     </header>
 
     <main class="main">
-        <section class="section-home" id="home">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <!-- SLIDER 1 -->
+                <div class="swiper-slide">
+                    <section class="section-home">
+                        <div class="content-home container">
+                            <div class="image-home">
+                                <img src="assets/images/modeliamge.png" alt="Modelo Image">
+                            </div>
+                            <div class="image-home2">
+                                <h1 class="title-image-slide">
+                                    Ultravelocidade na sua casa.
+                                </h1>
             
-        </section>
+                                <img src="assets/images/ofertasite001.png" alt="Oferta Image">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- SLIDER 2 -->
+                <div class="swiper-slide">
+                    <section class="section-home2">
+                        <div class="content-home container">
+                            <div class="image-home">
+                                <img src="assets/images/indicaofertasite002.png" alt="Modelo Image">
+                            </div>
+                            <div class="image-home2">
+                                <h1 class="title-image-slide">
+                                    Programa Indique Um Amigo.
+                                </h1>
+            
+                                <img src="assets/images/ofertasiteindica.png" alt="Oferta Image">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- SLIDER 3 -->
+                <div class="swiper-slide">
+                    <section class="section-home">
+                        <div class="content-home container">
+                            <div class="image-home">
+                                <img src="assets/images/modeliamge.png" alt="Modelo Image">
+                            </div>
+                            <div class="image-home2">
+                                <h1 class="title-image-slide">
+                                    Ultravelocidade na sua casa.
+                                </h1>
+            
+                                <img src="assets/images/ofertasite001.png" alt="Oferta Image">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </main>
 
-
+    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 
