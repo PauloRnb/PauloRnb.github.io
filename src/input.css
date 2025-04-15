@@ -7,6 +7,7 @@
 @theme {
   /* BREAKPOINT SIZE */
     --breakpoint-sm: 26.625rem;
+    --breakpoint-32md: 60rem;
   /* FONT FAMILY */
     --font-display: "Barlow", sans-serif;
   }
