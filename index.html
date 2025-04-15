@@ -15,10 +15,17 @@
     <nav class="w-full bg-blue-700">
         <div class="w-full h-[2.813rem]">
             <div class="w-full flex flex-col items-end justify-end px-6 md:hidden">
-                <button class="flex items-center justify-center gap-1 bg-transparent text-white text-xs font-medium leading-[14.4px] rounded-2xl my-[10px]">
+                <button
+                    class="flex items-center justify-center gap-1 bg-transparent text-white text-xs font-medium leading-[14.4px] rounded-2xl my-[10px] hover:text-blue-950 transition-all duration-300 cursor-pointer">
                     <span>Assine Pelo WhatsApp</span>
                     <div class="w-[18px] h-[18px] flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="2"> <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path> <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path> </svg> 
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" width="18" height="18" stroke-width="2">
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                            </path>
+                        </svg>
                     </div>
                 </button>
                 <div class="w-full h-[0.063rem] bg-blue-950 shrink-0"></div>
@@ -33,17 +40,33 @@
             <!-- LOGO MENU -->
             <a href="#">
                 <div class="flex items-center justify-center max-w-[160px] md:max-w-[180px]">
-                    <img class="w-[160px] md:w-[180px]" src="src/assets/images/logonetevolution.png" alt="Logo Net Evolution">
+                    <img class="w-[160px] md:w-[180px]" src="src/assets/images/logonetevolution.png"
+                        alt="Logo Net Evolution">
                 </div>
             </a>
 
             <!-- MENU ICON -->
             <button id="btn-menu"
-                class="cursor-pointer w-[2.125rem] h-[2.125rem] flex items-center justify-center bg-blue-600 p-2 rounded-[0.5rem] select-none group transition duration-[.3s] focus:outline-2 focus:outline-offset-1 focus:outline-blue-600 focus:bg-transparent md:hidden">
-                <i class='bx bx-menu text-white transition duration-[.3s] group-focus:text-blue-600 text-2xl'></i>
+                class="cursor-pointer w-[2.125rem] h-[2.125rem] flex items-center justify-center bg-blue-600 p-2 rounded-[0.5rem] select-none group transition duration-500 focus:outline-2 focus:outline-offset-1 focus:outline-blue-600 focus:bg-transparent md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path transform="scale(5.12,5.12)"
+                            d="M47,9c0.36064,-0.0051 0.69608,0.18438 0.87789,0.49587c0.18181,0.3115 0.18181,0.69676 0,1.00825c-0.18181,0.3115 -0.51725,0.50097 -0.87789,0.49587h-44c-0.36064,0.0051 -0.69608,-0.18438 -0.87789,-0.49587c-0.18181,-0.3115 -0.18181,-0.69676 0,-1.00825c0.18181,-0.3115 0.51725,-0.50097 0.87789,-0.49587zM47,24c0.36064,-0.0051 0.69608,0.18438 0.87789,0.49587c0.18181,0.3115 0.18181,0.69676 0,1.00825c-0.18181,0.3115 -0.51725,0.50097 -0.87789,0.49587h-44c-0.36064,0.0051 -0.69608,-0.18438 -0.87789,-0.49587c-0.18181,-0.3115 -0.18181,-0.69676 0,-1.00825c0.18181,-0.3115 0.51725,-0.50097 0.87789,-0.49587zM47,39c0.36064,-0.0051 0.69608,0.18438 0.87789,0.49587c0.18181,0.3115 0.18181,0.69676 0,1.00825c-0.18181,0.3115 -0.51725,0.50097 -0.87789,0.49587h-44c-0.36064,0.0051 -0.69608,-0.18438 -0.87789,-0.49587c-0.18181,-0.3115 -0.18181,-0.69676 0,-1.00825c0.18181,-0.3115 0.51725,-0.50097 0.87789,-0.49587z"
+                            id="strokeMainSVG" stroke="#ffffff" stroke-linejoin="round"></path>
+                        <g transform="scale(5.12,5.12)" stroke="none" stroke-linejoin="miter">
+                            <path
+                                d="M3,9c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h44c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,24c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h44c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,39c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h44c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
             </button>
 
-            <div id="box-menu" class="bg-white w-full h-full fixed inset-y-0 right-[-120%] top-0 border-l-[1px] border-l-white z-10 ease-in-out transition-all duration-500 flex flex-col items-center sm:max-w-sm md:max-w-[600px]">
+            <div id="box-menu"
+                class="bg-white w-full h-full fixed inset-y-0 right-[-120%] top-0 border-l-[1px] border-l-white z-10 ease-in-out transition-all duration-500 flex flex-col items-center sm:max-w-sm md:max-w-[600px]">
                 <div class="w-full bg-blue-600 h-[4.063rem] flex items-center justify-between px-6">
                     <span class="text-white font-medium tracking-[0.01rem]">Menu De Navegação</span>
                     <!-- BUTTOM CLOSE -->
