@@ -33,24 +33,64 @@
                 </div>
             </div>
             <div class="relative w-full h-[3.125rem] py-4 flex items-center justify-between md:h-[3.75rem]">
-                <!-- BUTTON LEFT - MODAL 001 BTN -->
-                <div class="32md:hidden">
-                    <button id="open-modal"
-                        class="cursor-pointer select-none text-white flex items-center justify-center gap-1 text-base hover:opacity-85 focus:opacity-85 active:opacity-85 transition-all drop-shadow-blue-200 font-medium"
-                        popovertarget="city-popover"><span>Áreas de
-                            Cobertura</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none"
-                            class="size-5 h-5 w-5 text-white rotate-45">
-                            <path
-                                d="M14.0002 26.5416C7.08183 26.5416 1.4585 20.9183 1.4585 13.9999C1.4585 7.08159 7.08183 1.45825 14.0002 1.45825C20.9185 1.45825 26.5418 7.08159 26.5418 13.9999C26.5418 20.9183 20.9185 26.5416 14.0002 26.5416ZM14.0002 3.20825C8.05016 3.20825 3.2085 8.04992 3.2085 13.9999C3.2085 19.9499 8.05016 24.7916 14.0002 24.7916C19.9502 24.7916 24.7918 19.9499 24.7918 13.9999C24.7918 8.04992 19.9502 3.20825 14.0002 3.20825Z"
-                                fill="currentColor"></path>
-                            <path
-                                d="M10.6983 18.1766C10.4766 18.1766 10.2549 18.0949 10.0799 17.9199C9.74159 17.5816 9.74159 17.0216 10.0799 16.6833L16.6833 10.0799C17.0216 9.74159 17.5816 9.74159 17.9199 10.0799C18.2583 10.4183 18.2583 10.9783 17.9199 11.3166L11.3166 17.9199C11.1533 18.0949 10.9199 18.1766 10.6983 18.1766Z"
-                                fill="currentColor"></path>
-                            <path
-                                d="M17.3016 18.1766C17.0799 18.1766 16.8583 18.0949 16.6833 17.9199L10.0799 11.3166C9.74159 10.9783 9.74159 10.4183 10.0799 10.0799C10.4183 9.74159 10.9783 9.74159 11.3166 10.0799L17.9199 16.6833C18.2583 17.0216 18.2583 17.5816 17.9199 17.9199C17.7449 18.0949 17.5233 18.1766 17.3016 18.1766Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </button>
+                <div class="w-full flex items-center justify-between">
+                    <!-- BUTTON LEFT - MODAL 001 BTN -->
+                    <div class="">
+                        <button id="open-modal"
+                            class="cursor-pointer select-none text-white flex items-center justify-center gap-1 text-base hover:opacity-85 focus:opacity-85 active:opacity-85 transition-all drop-shadow-blue-200 font-medium"
+                            popovertarget="city-popover"><span>Áreas de
+                                Cobertura</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none"
+                                class="size-5 h-5 w-5 text-white rotate-45">
+                                <path
+                                    d="M14.0002 26.5416C7.08183 26.5416 1.4585 20.9183 1.4585 13.9999C1.4585 7.08159 7.08183 1.45825 14.0002 1.45825C20.9185 1.45825 26.5418 7.08159 26.5418 13.9999C26.5418 20.9183 20.9185 26.5416 14.0002 26.5416ZM14.0002 3.20825C8.05016 3.20825 3.2085 8.04992 3.2085 13.9999C3.2085 19.9499 8.05016 24.7916 14.0002 24.7916C19.9502 24.7916 24.7918 19.9499 24.7918 13.9999C24.7918 8.04992 19.9502 3.20825 14.0002 3.20825Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M10.6983 18.1766C10.4766 18.1766 10.2549 18.0949 10.0799 17.9199C9.74159 17.5816 9.74159 17.0216 10.0799 16.6833L16.6833 10.0799C17.0216 9.74159 17.5816 9.74159 17.9199 10.0799C18.2583 10.4183 18.2583 10.9783 17.9199 11.3166L11.3166 17.9199C11.1533 18.0949 10.9199 18.1766 10.6983 18.1766Z"
+                                    fill="currentColor"></path>
+                                <path
+                                    d="M17.3016 18.1766C17.0799 18.1766 16.8583 18.0949 16.6833 17.9199L10.0799 11.3166C9.74159 10.9783 9.74159 10.4183 10.0799 10.0799C10.4183 9.74159 10.9783 9.74159 11.3166 10.0799L17.9199 16.6833C18.2583 17.0216 18.2583 17.5816 17.9199 17.9199C17.7449 18.0949 17.5233 18.1766 17.3016 18.1766Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- ITEMS MENU DESKTOP -->
+                    <div class="items-center justify-center gap-10 hidden 32md:flex">
+                        <div>
+                            <ul class="flex items-center justify-center gap-10">
+                                <li>
+                                    <a href="#"
+                                        class="text-base text-white font-medium hover:underline active:underline focus:underline transition-all duration-200">1
+                                        - Conteúdo</a>
+                                </li>
+                                <li>
+                                    <a href="#menu"
+                                        class="text-base text-white font-medium hover:underline active:underline focus:underline transition-all duration-200">2
+                                        - Menu</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-base text-white font-medium hover:underline active:underline focus:underline transition-all duration-200">3
+                                        - Rodapé</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="shrink-0 w-[1px] h-4 bg-white"></div>
+                            <a href="#"
+                                class="text-base text-white font-medium hover:underline active:underline focus:underline transition-all duration-200">Acessibilidade</a>
+                            <div class="shrink-0 w-[1px] h-4 bg-white"></div>
+                            <a href="#"
+                                class="text-base text-white font-medium hover:underline active:underline focus:underline transition-all duration-200 flex items-center justify-center gap-1">
+                                <span>Modo Escuro</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" fill="none"
+                                    class="size-5 text-white">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.68601 13.9974C7.67444 13.9977 7.66287 13.998 7.65128 13.9983C4.0624 14.0818 1.08533 11.2402 1.0018 7.65128C0.918272 4.0624 3.75992 1.08533 7.3488 1.0018C7.43261 0.99985 7.51609 0.999495 7.59921 1.00071L7.68601 13.9974ZM10.2132 14.4943C9.42417 14.8004 8.5695 14.9772 7.67455 14.998C3.53354 15.0944 0.0984513 11.8156 0.00207149 7.67455C-0.0943083 3.53354 3.18452 0.0984513 7.32553 0.00207149C8.84103 -0.0332009 10.262 0.383588 11.4593 1.12926C11.9914 1.437 12.4874 1.81045 12.9341 2.24438C14.356 3.62571 15.1622 5.50668 15.1753 7.47351C15.1884 9.44034 14.4074 11.3319 13.0041 12.7321C12.2107 13.5238 11.255 14.1217 10.2132 14.4943Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <!-- BUTTOM RIGHT -->
                 <button id="btn-submenu"
@@ -107,55 +147,26 @@
                             <button href="#"
                                 class="flex items-center justify-between px-6 py-8 select-none cursor-pointer gap-2">
                                 <span class="text-base text-gray-600 font-medium">Modo Escuro</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" fill="none" class="size-5 text-blue-700"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.68601 13.9974C7.67444 13.9977 7.66287 13.998 7.65128 13.9983C4.0624 14.0818 1.08533 11.2402 1.0018 7.65128C0.918272 4.0624 3.75992 1.08533 7.3488 1.0018C7.43261 0.99985 7.51609 0.999495 7.59921 1.00071L7.68601 13.9974ZM10.2132 14.4943C9.42417 14.8004 8.5695 14.9772 7.67455 14.998C3.53354 15.0944 0.0984513 11.8156 0.00207149 7.67455C-0.0943083 3.53354 3.18452 0.0984513 7.32553 0.00207149C8.84103 -0.0332009 10.262 0.383588 11.4593 1.12926C11.9914 1.437 12.4874 1.81045 12.9341 2.24438C14.356 3.62571 15.1622 5.50668 15.1753 7.47351C15.1884 9.44034 14.4074 11.3319 13.0041 12.7321C12.2107 13.5238 11.255 14.1217 10.2132 14.4943Z" fill="currentColor"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 15" fill="none"
+                                    class="size-5 text-blue-700">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.68601 13.9974C7.67444 13.9977 7.66287 13.998 7.65128 13.9983C4.0624 14.0818 1.08533 11.2402 1.0018 7.65128C0.918272 4.0624 3.75992 1.08533 7.3488 1.0018C7.43261 0.99985 7.51609 0.999495 7.59921 1.00071L7.68601 13.9974ZM10.2132 14.4943C9.42417 14.8004 8.5695 14.9772 7.67455 14.998C3.53354 15.0944 0.0984513 11.8156 0.00207149 7.67455C-0.0943083 3.53354 3.18452 0.0984513 7.32553 0.00207149C8.84103 -0.0332009 10.262 0.383588 11.4593 1.12926C11.9914 1.437 12.4874 1.81045 12.9341 2.24438C14.356 3.62571 15.1622 5.50668 15.1753 7.47351C15.1884 9.44034 14.4074 11.3319 13.0041 12.7321C12.2107 13.5238 11.255 14.1217 10.2132 14.4943Z"
+                                        fill="currentColor"></path>
+                                </svg>
                             </button>
                         </li>
                     </ul>
-                </div>
-                <!-- MENU DESKTOP -->
-                <div class="w-full flex items-center justify-between">
-                    <div>
-                        <button id="open-modal"
-                            class="cursor-pointer select-none text-white flex items-center justify-center gap-1 text-base hover:opacity-85 focus:opacity-85 active:opacity-85 transition-all drop-shadow-blue-200 font-medium"
-                            popovertarget="city-popover"><span>Áreas de
-                                Cobertura</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none"
-                                class="size-5 h-5 w-5 text-white rotate-45">
-                                <path
-                                    d="M14.0002 26.5416C7.08183 26.5416 1.4585 20.9183 1.4585 13.9999C1.4585 7.08159 7.08183 1.45825 14.0002 1.45825C20.9185 1.45825 26.5418 7.08159 26.5418 13.9999C26.5418 20.9183 20.9185 26.5416 14.0002 26.5416ZM14.0002 3.20825C8.05016 3.20825 3.2085 8.04992 3.2085 13.9999C3.2085 19.9499 8.05016 24.7916 14.0002 24.7916C19.9502 24.7916 24.7918 19.9499 24.7918 13.9999C24.7918 8.04992 19.9502 3.20825 14.0002 3.20825Z"
-                                    fill="currentColor"></path>
-                                <path
-                                    d="M10.6983 18.1766C10.4766 18.1766 10.2549 18.0949 10.0799 17.9199C9.74159 17.5816 9.74159 17.0216 10.0799 16.6833L16.6833 10.0799C17.0216 9.74159 17.5816 9.74159 17.9199 10.0799C18.2583 10.4183 18.2583 10.9783 17.9199 11.3166L11.3166 17.9199C11.1533 18.0949 10.9199 18.1766 10.6983 18.1766Z"
-                                    fill="currentColor"></path>
-                                <path
-                                    d="M17.3016 18.1766C17.0799 18.1766 16.8583 18.0949 16.6833 17.9199L10.0799 11.3166C9.74159 10.9783 9.74159 10.4183 10.0799 10.0799C10.4183 9.74159 10.9783 9.74159 11.3166 10.0799L17.9199 16.6833C18.2583 17.0216 18.2583 17.5816 17.9199 17.9199C17.7449 18.0949 17.5233 18.1766 17.3016 18.1766Z"
-                                    fill="currentColor"></path>
-                            </svg>
-                        </button>
-                    </div>
-                    <div>
-                        <ul class="flex">
-                            <li>
-                                <a href="#">1 - Conteúdo</a>
-                            </li>
-                            <li>
-                                <a href="#">2 - Menu</a>
-                            </li>
-                            <li>
-                                <a href="#">3 - Rodapé</a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
     </nav>
     <!-- NAVIGATION BOTTOM -->
-    <nav class="w-full h-[5rem] bg-gray-50 px-8 py-3 flex items-center justify-between">
+    <nav id="menu" class="w-full h-[5rem] bg-gray-50 px-8 py-3 flex items-center justify-between 32md:hidden">
         <!-- BOX MENU CONTAINER -->
         <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
 
             <!-- LOGO MENU -->
-            <a href="#">
+            <a href="#" class="32md:hidden">
                 <div class="flex items-center justify-center w-[170px] md:w-[190px]">
                     <img class="w-[170px] md:w-[190px]" src="src/assets/images/logonetevolution.png"
                         alt="Logo Net Evolution">
@@ -247,12 +258,71 @@
             </div>
         </div>
     </nav>
+    <!-- MENU DESKTOP -->
+    <header class="z-10 32md:flex hidden min-w-[375px] flex-col items-center bg-gray-50 px-8">
+        <div class="flex flex-col w-full max-w-7xl mx-auto">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-center gap-11 h-[5.5rem]">
+                    <!-- LOGO MENU -->
+                    <a href="#">
+                        <div class="flex items-center justify-center w-[170px] md:w-[190px]">
+                            <img class="w-[170px] md:w-[190px]" src="src/assets/images/logonetevolution.png"
+                                alt="Logo Net Evolution">
+                        </div>
+                    </a>
+                    <!-- NAVIGATION DESKTOP -->
+                    <nav>
+                        <div class="relative">
+                            <ul class="flex items-center justify-start flex-1 list-none h-[4.75rem] gap-6 space-x-0">
+                                <li>
+                                    <div class="flex flex-col items-center justify-center">
+                                        <a class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200"
+                                            href="#">Residencial</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button
+                                        class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200 flex items-center justify-center gap-1 group cursor-pointer"s
+                                        href="#">
+                                        <span>Empresarial</span>
+                                        <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="relative size-4 text-gray-700 group-hover:text-blue-700 group-hover:rotate-[-180deg] transition-all duration-600">
+                                            <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li>
+                                    <a class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200"
+                                        href="#">Parceiros</a>
+                                </li>
+                                <li>
+                                    <a class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200"
+                                        href="#">Indique Um Amigo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <div></div>
+            <div>
+
+            </div>
+        </div>
+    </header>
 
 
 
     <!-- MODAL 001 -->
-    <div id="modal-window" class="animate-fadeInTwo fixed hidden inset-0 z-50 backdrop-blur-[2px] duration-100 transition-all bg-gray-800/30 bg-opactiTY-50">
-        <div class="animate-fadeIn fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] grid w-[21.25rem] h-[11.563rem] bg-white p-4 shadow-lg duration-200 transition-all gap-4 md:w-[500px] rounded-lg">
+    <div id="modal-window"
+        class="animate-fadeInTwo fixed hidden inset-0 z-50 backdrop-blur-[2px] duration-100 transition-all bg-gray-800/30 bg-opactiTY-50">
+        <div
+            class="animate-fadeIn fixed top-[50%] left-[50%] z-50 translate-x-[-50%] translate-y-[-50%] grid w-[21.25rem] h-[11.563rem] bg-white p-4 shadow-lg duration-200 transition-all gap-4 md:w-[500px] rounded-lg">
             <div class="flex flex-col space-y-1.5 text-left items-start justify-center">
                 <div class="flex items-center justify-start mb-8">
                     <h4 class="text-blue-700 text-lg font-medium">Áreas de Cobertura:</h4>
@@ -286,6 +356,8 @@
             </button>
         </div>
     </div>
+
+    <!-- MODAL 002 -->
 
     <!-- LINK TO JS -->
     <script src="src/assets/js/index.js"></script>
