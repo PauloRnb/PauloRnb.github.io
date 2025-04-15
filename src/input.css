@@ -6,8 +6,34 @@
 
 @theme {
   /* BREAKPOINT SIZE */
-    --breakpoint-sm: 26.625rem;
-    --breakpoint-32md: 60rem;
+  --breakpoint-sm: 26.625rem;
+  --breakpoint-32md: 60rem;
   /* FONT FAMILY */
-    --font-display: "Barlow", sans-serif;
+  --font-display: "Barlow", sans-serif;
+  /* KEYFRAMES */
+  --animate-fadeIn: fadeIn 0.3s ease-in-out;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
+
+  /* KEYFRAMES TWO */
+  --animate-fadeInTwo: fadeInTwo ease-in-out;
+  @keyframes fadeInTwo {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
