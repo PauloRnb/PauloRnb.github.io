@@ -249,6 +249,9 @@
   .w-\[18px\] {
     width: 18px;
   }
+  .w-\[160px\] {
+    width: 160px;
+  }
   .w-full {
     width: 100%;
   }
@@ -486,6 +489,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:w-\[180px\] {
+    @media (width >= 48rem) {
+      width: 180px;
     }
   }
   .md\:max-w-\[180px\] {
