@@ -211,9 +211,6 @@
                     <div class="bg-transparent">
                         <ul class="flex items-center gap-11 px-6 h-[6.25rem]">
                             <li>
-                                <a href="#" class="text-base text-gray-500 font-normal select-none">Parceiros</a>
-                            </li>
-                            <li>
                                 <a href="#" class="text-base text-gray-500 font-normal select-none">Indique Um Amigo</a>
                             </li>
                         </ul>
@@ -272,41 +269,260 @@
                     </a>
                     <!-- NAVIGATION DESKTOP -->
                     <nav>
-                        <div class="relative">
-                            <ul class="flex items-center justify-start flex-1 list-none h-[4.75rem] gap-6 space-x-0">
-                                <li>
-                                    <div class="flex flex-col items-center justify-center">
-                                        <a class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200"
-                                            href="#">Residencial</a>
+                        <ul class="flex items-center justify-start flex-1 list-none h-[4.75rem] gap-6 space-x-0">
+                            <li>
+                                <div class="flex flex-col items-center justify-center">
+                                    <a class="text-base text-gray-700 font-medium hover:text-blue-700 transition-all duration-200 lg:text-lg"
+                                        href="#">Residencial</a>
+                                </div>
+                            </li>
+                            <li class="relative group">
+                                <a href="#"
+                                    class="text-base text-gray-700 font-medium flex items-center justify-center gap-1 cursor-pointer hover:text-blue-700 group lg:text-lg"
+                                    s href="#">
+                                    <span class="group-hover:text-blue-700">Empresarial</span>
+                                    <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="relative size-4 text-gray-700 group-hover:text-blue-700">
+                                        <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                        </path>
+                                    </svg>
+                                </a>
+                                <!-- DROPDOWN -->
+                                <div
+                                    class="absolute top-6 -left-48 transition group-hover:translate-x-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300 ease-in-out group-hover:transform z-50 transform w-[23.5rem] h-[20.625rem]">
+                                    <div class="relative top-6 px-10 pt-14 bg-white rounded-lg shadow-xl w-full h-full">
+                                        <div
+                                            class="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm">
+                                        </div>
+                                        <div class="relative z-10">
+                                            <div class="flex flex-col gap-6">
+                                                <div>
+                                                    <h4 class="text-gray-700 font-medium text-base">Planos Empresariais:
+                                                    </h4>
+                                                    <p class="text-sm text-gray-600 mb-4">A Solução Para a Sua Empresa
+                                                        Está Aqui</p>
+                                                    <div>
+                                                        <a class="text-base text-gray-700 font-medium group" href="#">
+                                                            <div
+                                                                class="flex items-center justify-start hover:text-blue-700 gap-1 hover:underline">
+                                                                <span class="text-blue-700">Acessar Página
+                                                                    Empresarial</span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="none"
+                                                                    class="text-blue-700 size-5 transform">
+                                                                    <path d="M4.16675 10H15.8334" stroke="currentColor"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path d="M10 4.16675L15.8333 10.0001L10 15.8334"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-6">
+                                                    <h4 class="text-gray-700 font-medium text-base">Contrate Agora
+                                                    </h4>
+                                                    <p class="text-sm text-gray-600 mb-4">(85) 9 9736-2750</p>
+                                                    <div>
+                                                        <a class="text-base text-gray-700 font-medium group" href="#">
+                                                            <div
+                                                                class="flex items-center justify-start hover:text-blue-700 gap-1 hover:underline">
+                                                                <span class="text-blue-700">Ligue Já</span>
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="none"
+                                                                    class="text-blue-700 size-5 transform">
+                                                                    <path d="M4.16675 10H15.8334" stroke="currentColor"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round"></path>
+                                                                    <path d="M10 4.16675L15.8333 10.0001L10 15.8334"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                    </path>
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <button
-                                        class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200 flex items-center justify-center gap-1 group cursor-pointer"s
-                                        href="#">
-                                        <span>Empresarial</span>
+                                </div>
+                            </li>
+                            <!-- <li>
+                                <a class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200"
+                                    href="#">Parceiros</a>
+                            </li> -->
+                            <li>
+                                <a class="text-base text-gray-700 font-medium hover:text-blue-700 transition-all duration-200 lg:text-lg"
+                                    href="#">Indique Um Amigo</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <div>
+                        <div></div>
+                        <nav>
+                            <ul class="flex items-center justify-start flex-1 list-none h-[4.75rem] gap-6 space-x-0">
+                                <li class="relative group">
+                                    <a href="#"
+                                        class="text-base text-gray-700 font-medium flex items-center justify-center gap-1 cursor-pointer hover:text-blue-700 group lg:text-lg"
+                                        s href="#">
+                                        <span class="group-hover:text-blue-700">Assine Já</span>
                                         <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                            class="relative size-4 text-gray-700 group-hover:text-blue-700 group-hover:rotate-[-180deg] transition-all duration-600">
+                                            class="relative size-4 text-gray-700 group-hover:text-blue-700">
                                             <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
                                                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                             </path>
                                         </svg>
-                                    </button>
+                                    </a>
+                                    <!-- DROPDOWN -->
+                                    <div
+                                        class="absolute top-6 -left-48 transition group-hover:translate-x-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300 ease-in-out group-hover:transform z-50 transform w-[23.5rem] h-[20.625rem]">
+                                        <div class="relative top-6 px-10 pt-14 bg-white rounded-lg shadow-xl w-full h-full">
+                                            <div
+                                                class="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm">
+                                            </div>
+                                            <div class="relative z-10">
+                                                <div class="flex flex-col gap-6">
+                                                    <div>
+                                                        <h4 class="text-gray-700 font-medium text-base">Planos Empresariais:
+                                                        </h4>
+                                                        <p class="text-sm text-gray-600 mb-4">A Solução Para a Sua Empresa
+                                                            Está Aqui</p>
+                                                        <div>
+                                                            <a class="text-base text-gray-700 font-medium group" href="#">
+                                                                <div
+                                                                    class="flex items-center justify-start hover:text-blue-700 gap-1 hover:underline">
+                                                                    <span class="text-blue-700">Acessar Página
+                                                                        Empresarial</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 20 20" fill="none"
+                                                                        class="text-blue-700 size-5 transform">
+                                                                        <path d="M4.16675 10H15.8334" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"></path>
+                                                                        <path d="M10 4.16675L15.8333 10.0001L10 15.8334"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round" stroke-linejoin="round">
+                                                                        </path>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-6">
+                                                        <h4 class="text-gray-700 font-medium text-base">Contrate Agora
+                                                        </h4>
+                                                        <p class="text-sm text-gray-600 mb-4">(85) 9 9736-2750</p>
+                                                        <div>
+                                                            <a class="text-base text-gray-700 font-medium group" href="#">
+                                                                <div
+                                                                    class="flex items-center justify-start hover:text-blue-700 gap-1 hover:underline">
+                                                                    <span class="text-blue-700">Ligue Já</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 20 20" fill="none"
+                                                                        class="text-blue-700 size-5 transform">
+                                                                        <path d="M4.16675 10H15.8334" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"></path>
+                                                                        <path d="M10 4.16675L15.8333 10.0001L10 15.8334"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round" stroke-linejoin="round">
+                                                                        </path>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li>
-                                    <a class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200"
-                                        href="#">Parceiros</a>
-                                </li>
-                                <li>
-                                    <a class="text-lg text-gray-700 font-medium hover:text-blue-700 transition-all duration-200"
-                                        href="#">Indique Um Amigo</a>
+                                <li class="relative group">
+                                    <a href="#"
+                                        class="text-base text-gray-700 font-medium flex items-center justify-center gap-1 cursor-pointer hover:text-blue-700 group lg:text-lg"
+                                        s href="#">
+                                        <span class="group-hover:text-blue-700">Área Do Cliente</span>
+                                        <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="relative size-4 text-gray-700 group-hover:text-blue-700">
+                                            <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <!-- DROPDOWN -->
+                                    <div
+                                        class="absolute top-6 -left-48 transition group-hover:translate-x-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-300 ease-in-out group-hover:transform z-50 transform w-[23.5rem] h-[20.625rem]">
+                                        <div class="relative top-6 px-10 pt-14 bg-white rounded-lg shadow-xl w-full h-full">
+                                            <div
+                                                class="w-10 h-10 bg-white transform rotate-45 absolute top-0 z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm">
+                                            </div>
+                                            <div class="relative z-10">
+                                                <div class="flex flex-col gap-6">
+                                                    <div>
+                                                        <h4 class="text-gray-700 font-medium text-base">Planos Empresariais:
+                                                        </h4>
+                                                        <p class="text-sm text-gray-600 mb-4">A Solução Para a Sua Empresa
+                                                            Está Aqui</p>
+                                                        <div>
+                                                            <a class="text-base text-gray-700 font-medium group" href="#">
+                                                                <div
+                                                                    class="flex items-center justify-start hover:text-blue-700 gap-1 hover:underline">
+                                                                    <span class="text-blue-700">Acessar Página
+                                                                        Empresarial</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 20 20" fill="none"
+                                                                        class="text-blue-700 size-5 transform">
+                                                                        <path d="M4.16675 10H15.8334" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"></path>
+                                                                        <path d="M10 4.16675L15.8333 10.0001L10 15.8334"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round" stroke-linejoin="round">
+                                                                        </path>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-6">
+                                                        <h4 class="text-gray-700 font-medium text-base">Contrate Agora
+                                                        </h4>
+                                                        <p class="text-sm text-gray-600 mb-4">(85) 9 9736-2750</p>
+                                                        <div>
+                                                            <a class="text-base text-gray-700 font-medium group" href="#">
+                                                                <div
+                                                                    class="flex items-center justify-start hover:text-blue-700 gap-1 hover:underline">
+                                                                    <span class="text-blue-700">Ligue Já</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 20 20" fill="none"
+                                                                        class="text-blue-700 size-5 transform">
+                                                                        <path d="M4.16675 10H15.8334" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"></path>
+                                                                        <path d="M10 4.16675L15.8333 10.0001L10 15.8334"
+                                                                            stroke="currentColor" stroke-width="2"
+                                                                            stroke-linecap="round" stroke-linejoin="round">
+                                                                        </path>
+                                                                    </svg>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
-                        </div>
-                    </nav>
-                </div>
-                <div>
-
+                        </nav>
+                    </div>
                 </div>
             </div>
             <div></div>
