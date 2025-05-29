@@ -1,0 +1,13 @@
+/* Dropdown Click e Hover*/
+
+.relative.group:hover>div {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(1.25rem) translateY(0);
+}
+
+.open {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateX(1.25rem) translateY(0) !important;
+}
