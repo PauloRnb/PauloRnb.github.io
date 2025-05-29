@@ -81,6 +81,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // === MENU MOBILE 4 ===
+    const btnResidential = document.getElementById('btn-internet-residential');
+    const btnResidentialClose = document.getElementById('btn-close-internet-residential');
+    const boxResidentialMenu = document.getElementById('box-menu-internet-residential');
+    const backdropResidential = document.getElementById('menu-backdrop-internet-residential');
+
+    btnResidential?.addEventListener('click', () => {
+        requestIdleCallback(() => {
+            boxResidentialMenu?.classList.add('right-[0]');
+            backdropResidential?.classList.remove('hidden');
+        });
+    });
+
+    btnResidentialClose?.addEventListener('click', () => {
+        requestIdleCallback(() => {
+            boxResidentialMenu?.classList.remove('right-[0]');
+            backdropResidential?.classList.add('hidden');
+        });
+    });
+
+    backdropResidential?.addEventListener('click', () => {
+        requestIdleCallback(() => {
+            boxResidentialMenu?.classList.remove('right-[0]');
+            backdropResidential?.classList.add('hidden');
+        });
+    });
+
     // === SUBMENU MOBILE ===
     const btnSubmenu = document.getElementById('btn-submenu');
     const btnCloseSubmenu = document.getElementById('btn-closesubmenu');
