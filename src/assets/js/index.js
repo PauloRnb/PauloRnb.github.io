@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     function lockScroll() {
         document.body.classList.add('overflow-hidden');
@@ -23,55 +24,24 @@ document.addEventListener('DOMContentLoaded', () => {
         unlockScroll();
     }
 
-    // === MENU MOBILE 1 ===
-    const btnMenu = document.getElementById('btn-menu');
-    const btnClose = document.getElementById('btn-close');
-    const boxMenu = document.getElementById('box-menu');
-    const backdrop = document.getElementById('menu-backdrop');
+    const menus = [
+        ['btn-menu', 'btn-close', 'box-menu', 'menu-backdrop'],
+        ['btn-signature', 'btn-close-signature', 'box-menu-signature', 'menu-backdrop-signature'],
+        ['btn-client', 'btn-close-client', 'box-menu-client', 'menu-backdrop-client'],
+        ['btn-internet-residential', 'btn-close-internet-residential', 'box-menu-internet-residential', 'menu-backdrop-internet-residential'],
+        ['btn-submenu', 'btn-closesubmenu', 'box-submenu', 'submenu-backdrop']
+    ];
 
-    btnMenu?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxMenu, backdrop)));
-    btnClose?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxMenu, backdrop)));
-    backdrop?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxMenu, backdrop)));
+    menus.forEach(([btnOpenId, btnCloseId, boxId, backdropId]) => {
+        const btnOpen = document.getElementById(btnOpenId);
+        const btnClose = document.getElementById(btnCloseId);
+        const box = document.getElementById(boxId);
+        const backdrop = document.getElementById(backdropId);
 
-    // === MENU MOBILE 2 ===
-    const btnSignature = document.getElementById('btn-signature');
-    const btnSignatureClose = document.getElementById('btn-close-signature');
-    const boxSignatureMenu = document.getElementById('box-menu-signature');
-    const backdropSignature = document.getElementById('menu-backdrop-signature');
-
-    btnSignature?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxSignatureMenu, backdropSignature)));
-    btnSignatureClose?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxSignatureMenu, backdropSignature)));
-    backdropSignature?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxSignatureMenu, backdropSignature)));
-
-    // === MENU MOBILE 3 ===
-    const btnClient = document.getElementById('btn-client');
-    const btnClientClose = document.getElementById('btn-close-client');
-    const boxClientMenu = document.getElementById('box-menu-client');
-    const backdropClient = document.getElementById('menu-backdrop-client');
-
-    btnClient?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxClientMenu, backdropClient)));
-    btnClientClose?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxClientMenu, backdropClient)));
-    backdropClient?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxClientMenu, backdropClient)));
-
-    // === MENU MOBILE 4 ===
-    const btnResidential = document.getElementById('btn-internet-residential');
-    const btnResidentialClose = document.getElementById('btn-close-internet-residential');
-    const boxResidentialMenu = document.getElementById('box-menu-internet-residential');
-    const backdropResidential = document.getElementById('menu-backdrop-internet-residential');
-
-    btnResidential?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxResidentialMenu, backdropResidential)));
-    btnResidentialClose?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxResidentialMenu, backdropResidential)));
-    backdropResidential?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxResidentialMenu, backdropResidential)));
-
-    // === SUBMENU MOBILE ===
-    const btnSubmenu = document.getElementById('btn-submenu');
-    const btnCloseSubmenu = document.getElementById('btn-closesubmenu');
-    const boxSubmenu = document.getElementById('box-submenu');
-    const backdropSubmenu = document.getElementById('submenu-backdrop');
-
-    btnSubmenu?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxSubmenu, backdropSubmenu)));
-    btnCloseSubmenu?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxSubmenu, backdropSubmenu)));
-    backdropSubmenu?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxSubmenu, backdropSubmenu)));
+        btnOpen?.addEventListener('click', () => openMenu(box, backdrop));
+        btnClose?.addEventListener('click', () => closeMenu(box, backdrop));
+        backdrop?.addEventListener('click', () => closeMenu(box, backdrop));
+    });
 
     // === DROPDOWN ===
     const triggers = document.querySelectorAll('[data-dropdown]');
