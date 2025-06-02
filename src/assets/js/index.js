@@ -1,36 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // === MENU MOBILE ===
+    function lockScroll() {
+        document.body.classList.add('overflow-hidden');
+        document.documentElement.classList.add('overflow-hidden');
+    }
+
+    function unlockScroll() {
+        document.body.classList.remove('overflow-hidden');
+        document.documentElement.classList.remove('overflow-hidden');
+    }
+
+    function openMenu(menu, backdrop) {
+        menu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
+        menu?.classList.add('translate-x-0', 'opacity-100');
+        backdrop?.classList.remove('hidden');
+        lockScroll();
+    }
+
+    function closeMenu(menu, backdrop) {
+        menu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+        menu?.classList.remove('translate-x-0', 'opacity-100');
+        backdrop?.classList.add('hidden');
+        unlockScroll();
+    }
+
+    // === MENU MOBILE 1 ===
     const btnMenu = document.getElementById('btn-menu');
     const btnClose = document.getElementById('btn-close');
     const boxMenu = document.getElementById('box-menu');
     const backdrop = document.getElementById('menu-backdrop');
 
-    btnMenu?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxMenu?.classList.add('translate-x-0', 'opacity-100');
-            backdrop?.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
-        });
-    });
-
-    btnClose?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxMenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdrop?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
-
-    backdrop?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxMenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdrop?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
+    btnMenu?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxMenu, backdrop)));
+    btnClose?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxMenu, backdrop)));
+    backdrop?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxMenu, backdrop)));
 
     // === MENU MOBILE 2 ===
     const btnSignature = document.getElementById('btn-signature');
@@ -38,33 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxSignatureMenu = document.getElementById('box-menu-signature');
     const backdropSignature = document.getElementById('menu-backdrop-signature');
 
-    btnSignature?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxSignatureMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxSignatureMenu?.classList.add('translate-x-0', 'opacity-100');
-            backdropSignature?.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
-        });
-    });
-
-    btnSignatureClose?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxSignatureMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxSignatureMenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdropSignature?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
-
-    backdropSignature?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxSignatureMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxSignatureMenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdropSignature?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
-
+    btnSignature?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxSignatureMenu, backdropSignature)));
+    btnSignatureClose?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxSignatureMenu, backdropSignature)));
+    backdropSignature?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxSignatureMenu, backdropSignature)));
 
     // === MENU MOBILE 3 ===
     const btnClient = document.getElementById('btn-client');
@@ -72,32 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxClientMenu = document.getElementById('box-menu-client');
     const backdropClient = document.getElementById('menu-backdrop-client');
 
-    btnClient?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxClientMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxClientMenu?.classList.add('translate-x-0', 'opacity-100');
-            backdropClient?.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
-        });
-    });
-
-    btnClientClose?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxClientMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxClientMenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdropClient?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
-
-    backdropClient.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxClientMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxClientMenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdropClient?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
+    btnClient?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxClientMenu, backdropClient)));
+    btnClientClose?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxClientMenu, backdropClient)));
+    backdropClient?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxClientMenu, backdropClient)));
 
     // === MENU MOBILE 4 ===
     const btnResidential = document.getElementById('btn-internet-residential');
@@ -105,32 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxResidentialMenu = document.getElementById('box-menu-internet-residential');
     const backdropResidential = document.getElementById('menu-backdrop-internet-residential');
 
-    btnResidential?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxResidentialMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxResidentialMenu?.classList.add('translate-x-0', 'opacity-100');
-            backdropResidential?.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
-        });
-    });
-
-    btnResidentialClose?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxResidentialMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxResidentialMenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdropResidential?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
-
-    backdropResidential.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxResidentialMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxResidentialMenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdropResidential?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
+    btnResidential?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxResidentialMenu, backdropResidential)));
+    btnResidentialClose?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxResidentialMenu, backdropResidential)));
+    backdropResidential?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxResidentialMenu, backdropResidential)));
 
     // === SUBMENU MOBILE ===
     const btnSubmenu = document.getElementById('btn-submenu');
@@ -138,32 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxSubmenu = document.getElementById('box-submenu');
     const backdropSubmenu = document.getElementById('submenu-backdrop');
 
-    btnSubmenu?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxSubmenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxSubmenu?.classList.add('translate-x-0', 'opacity-100');
-            backdropSubmenu?.classList.remove('hidden');
-            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
-        });
-    });
-
-    btnCloseSubmenu?.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxSubmenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxSubmenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdropSubmenu?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
-
-    backdropSubmenu.addEventListener('click', () => {
-        requestIdleCallback(() => {
-            boxSubmenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-            boxSubmenu?.classList.remove('translate-x-0', 'opacity-100');
-            backdropSubmenu?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
-        });
-    });
+    btnSubmenu?.addEventListener('click', () => requestIdleCallback(() => openMenu(boxSubmenu, backdropSubmenu)));
+    btnCloseSubmenu?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxSubmenu, backdropSubmenu)));
+    backdropSubmenu?.addEventListener('click', () => requestIdleCallback(() => closeMenu(boxSubmenu, backdropSubmenu)));
 
     // === DROPDOWN ===
     const triggers = document.querySelectorAll('[data-dropdown]');
@@ -190,14 +98,12 @@ document.addEventListener('DOMContentLoaded', () => {
             isOpen = false;
         };
 
-        // Click
         trigger.addEventListener('click', (e) => {
             if (justTouched) return;
             e.stopPropagation();
             isOpen ? hideDropdown() : showDropdown();
         });
 
-        // Touch
         trigger.addEventListener('touchstart', (e) => {
             e.stopPropagation();
             justTouched = true;
@@ -205,7 +111,6 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => justTouched = false, 400);
         }, { passive: true });
 
-        // Hover (desktop)
         trigger.addEventListener('mouseenter', () => {
             if (window.innerWidth > 768) {
                 clearTimeout(hoverTimeout);
@@ -233,7 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Click ou toque fora
         document.addEventListener('click', (e) => {
             if (!trigger.contains(e.target) && !dropdown.contains(e.target)) hideDropdown();
         });
