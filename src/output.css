@@ -258,6 +258,9 @@
   .right-\[0\] {
     right: 0;
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .-left-96 {
     left: calc(var(--spacing) * -96);
   }
@@ -391,6 +394,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
   .h-\[0\.063rem\] {
     height: 0.063rem;
   }
@@ -462,6 +468,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .min-h-\[10rem\] {
+    min-height: 10rem;
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
