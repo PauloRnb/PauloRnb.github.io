@@ -7,21 +7,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnMenu?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxMenu?.classList.add('right-[0]');
+            boxMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxMenu?.classList.add('translate-x-0', 'opacity-100');
             backdrop?.classList.remove('hidden');
         });
     });
 
     btnClose?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxMenu?.classList.remove('right-[0]');
+            boxMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdrop?.classList.add('hidden');
         });
     });
 
     backdrop?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxMenu?.classList.remove('right-[0]');
+            boxMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdrop?.classList.add('hidden');
         });
     });
@@ -34,21 +37,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnSignature?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxSignatureMenu?.classList.add('right-[0]');
+            boxSignatureMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxSignatureMenu?.classList.add('translate-x-0', 'opacity-100');
             backdropSignature?.classList.remove('hidden');
         });
     });
 
     btnSignatureClose?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxSignatureMenu?.classList.remove('right-[0]');
+            boxSignatureMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxSignatureMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropSignature?.classList.add('hidden');
         });
     });
 
     backdropSignature?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxSignatureMenu?.classList.remove('right-[0]');
+             boxSignatureMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+             boxSignatureMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropSignature?.classList.add('hidden');
         });
     });
@@ -62,21 +68,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnClient?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxClientMenu?.classList.add('right-[0]');
+            boxClientMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxClientMenu?.classList.add('translate-x-0', 'opacity-100');
             backdropClient?.classList.remove('hidden');
         });
     });
 
     btnClientClose?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxClientMenu?.classList.remove('right-[0]');
+            boxClientMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxClientMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropClient?.classList.add('hidden');
         });
     });
 
-    backdropClient?.addEventListener('click', () => {
+    backdropClient.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxClientMenu?.classList.remove('right-[0]');
+             boxClientMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+             boxClientMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropClient?.classList.add('hidden');
         });
     });
@@ -89,21 +98,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnResidential?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxResidentialMenu?.classList.add('right-[0]');
+            boxResidentialMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxResidentialMenu?.classList.add('translate-x-0', 'opacity-100');
             backdropResidential?.classList.remove('hidden');
         });
     });
 
     btnResidentialClose?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxResidentialMenu?.classList.remove('right-[0]');
+            boxResidentialMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxResidentialMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropResidential?.classList.add('hidden');
         });
     });
 
-    backdropResidential?.addEventListener('click', () => {
+    backdropResidential.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxResidentialMenu?.classList.remove('right-[0]');
+             boxResidentialMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+             boxResidentialMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropResidential?.classList.add('hidden');
         });
     });
@@ -116,21 +128,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnSubmenu?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxSubmenu?.classList.add('right-[0]');
+            boxSubmenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxSubmenu?.classList.add('translate-x-0', 'opacity-100');
             backdropSubmenu?.classList.remove('hidden');
         });
     });
 
     btnCloseSubmenu?.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxSubmenu?.classList.remove('right-[0]');
+            boxSubmenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxSubmenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropSubmenu?.classList.add('hidden');
         });
     });
 
-    backdropSubmenu?.addEventListener('click', () => {
+    backdropSubmenu.addEventListener('click', () => {
         requestIdleCallback(() => {
-            boxSubmenu?.classList.remove('right-[0]');
+             boxSubmenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+             boxSubmenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropSubmenu?.classList.add('hidden');
         });
     });
