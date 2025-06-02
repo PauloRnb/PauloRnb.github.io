@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             boxMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxMenu?.classList.add('translate-x-0', 'opacity-100');
             backdrop?.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
         });
     });
 
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             boxMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdrop?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
@@ -26,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             boxMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdrop?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
@@ -40,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             boxSignatureMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxSignatureMenu?.classList.add('translate-x-0', 'opacity-100');
             backdropSignature?.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
         });
     });
 
@@ -48,14 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
             boxSignatureMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxSignatureMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropSignature?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
     backdropSignature?.addEventListener('click', () => {
         requestIdleCallback(() => {
-             boxSignatureMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-             boxSignatureMenu?.classList.remove('translate-x-0', 'opacity-100');
+            boxSignatureMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxSignatureMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropSignature?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
@@ -71,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             boxClientMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxClientMenu?.classList.add('translate-x-0', 'opacity-100');
             backdropClient?.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
         });
     });
 
@@ -79,14 +86,16 @@ document.addEventListener('DOMContentLoaded', () => {
             boxClientMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxClientMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropClient?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
     backdropClient.addEventListener('click', () => {
         requestIdleCallback(() => {
-             boxClientMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-             boxClientMenu?.classList.remove('translate-x-0', 'opacity-100');
+            boxClientMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxClientMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropClient?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
@@ -101,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
             boxResidentialMenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxResidentialMenu?.classList.add('translate-x-0', 'opacity-100');
             backdropResidential?.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
         });
     });
 
@@ -109,14 +119,16 @@ document.addEventListener('DOMContentLoaded', () => {
             boxResidentialMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxResidentialMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropResidential?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
     backdropResidential.addEventListener('click', () => {
         requestIdleCallback(() => {
-             boxResidentialMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-             boxResidentialMenu?.classList.remove('translate-x-0', 'opacity-100');
+            boxResidentialMenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxResidentialMenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropResidential?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
@@ -131,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             boxSubmenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxSubmenu?.classList.add('translate-x-0', 'opacity-100');
             backdropSubmenu?.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden'); // 🔒 Bloqueia o scroll
         });
     });
 
@@ -139,14 +152,16 @@ document.addEventListener('DOMContentLoaded', () => {
             boxSubmenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
             boxSubmenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropSubmenu?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
     backdropSubmenu.addEventListener('click', () => {
         requestIdleCallback(() => {
-             boxSubmenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
-             boxSubmenu?.classList.remove('translate-x-0', 'opacity-100');
+            boxSubmenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
+            boxSubmenu?.classList.remove('translate-x-0', 'opacity-100');
             backdropSubmenu?.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden'); // ✅ Libera o scroll
         });
     });
 
