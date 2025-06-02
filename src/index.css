@@ -11,3 +11,11 @@
     visibility: visible !important;
     transform: translateX(1.25rem) translateY(0) !important;
 }
+
+.swiper-pagination-bullet {
+    width: 2.188rem !important;
+    height: 0.313rem !important;
+    background: #FFFFFF !important;
+    border-radius: 0.75rem !important;
+}
+
