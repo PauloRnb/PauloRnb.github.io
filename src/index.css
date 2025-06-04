@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 /* Dropdown Click e Hover*/
 
 .relative.group:hover>div {
@@ -54,6 +59,7 @@
 
 .swiper-pagination-plans {
     display: flex;
+    width: initial !important;
 }
 
 .swiper-pagination-plans .swiper-pagination-bullet {
