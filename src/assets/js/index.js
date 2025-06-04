@@ -65,13 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
         boxSubmenu?.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
         boxSubmenu?.classList.add('translate-x-0', 'opacity-100');
         backdropSubmenu?.classList.remove('hidden');
-        // Submenu não afeta scroll
+        lockScroll();
     });
 
     btnCloseSubmenu?.addEventListener('click', () => {
         boxSubmenu?.classList.add('translate-x-full', 'opacity-0', 'pointer-events-none');
         boxSubmenu?.classList.remove('translate-x-0', 'opacity-100');
         backdropSubmenu?.classList.add('hidden');
+        unlockScroll();
     });
 
     // === DROPDOWN ===
@@ -166,14 +167,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     openBtn?.addEventListener('click', () => {
         modal?.classList.remove('hidden');
+        lockScroll();
     });
 
     closeBtn?.addEventListener('click', () => {
         modal?.classList.add('hidden');
+        unlockScroll();
     });
 
     modal?.addEventListener("click", (e) => {
-        if (e.target === modal) modal.classList.add("hidden");
+        if (e.target === modal) {
+            modal.classList.add("hidden");
+            unlockScroll();
+        }
     });
 
     // === TABS ===
@@ -239,6 +245,7 @@ var swiperPlans = new Swiper(".mySwiperPlans", {
         clickable: true,
     },
 });
+
 
 
 /*
