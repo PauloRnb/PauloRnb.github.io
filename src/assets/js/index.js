@@ -146,17 +146,74 @@ document.addEventListener('DOMContentLoaded', () => {
     modal?.addEventListener("click", (e) => {
         if (e.target === modal) modal.classList.add("hidden");
     });
+
+    // TABELA PLANOS
+    const tabs = document.querySelectorAll(".tab-btn");
+    const contents = document.querySelectorAll(".tab-content");
+    const underline = document.getElementById("tab-underline");
+
+    function activateTab(tab) {
+        tabs.forEach(btn => btn.classList.remove("text-orange-600", "border-orange-500"));
+        tab.classList.add("text-orange-600", "border-orange-500");
+
+        const selected = tab.dataset.tab;
+
+        contents.forEach(content => {
+            if (content.id === selected) {
+                content.classList.remove("hidden");
+                setTimeout(() => content.classList.add("opacity-100"), 10);
+                content.classList.remove("opacity-0");
+            } else {
+                content.classList.remove("opacity-100");
+                content.classList.add("opacity-0");
+                setTimeout(() => content.classList.add("hidden"), 300);
+            }
+        });
+
+        // underline animada
+        underline.style.width = `${tab.offsetWidth}px`;
+        underline.style.left = `${tab.offsetLeft}px`;
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => activateTab(tab));
+    });
+
+    // inicia com a primeira aba ativa
+    window.addEventListener("load", () => {
+        activateTab(tabs[0]);
+    });
+
 });
 
-var swiper = new Swiper(".mySwiper", {
+
+// CARROSEL SEÇÃO INICIAL
+var swiperHome = new Swiper(".mySwiperHome", {
     spaceBetween: 30,
     effect: "fade",
+    // autoplay: { delay: 3000 },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-home",
+        prevEl: ".swiper-button-prev-home",
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiper-pagination-home",
+        clickable: true,
+    },
+});
+
+// CARROSEL SEÇÃO PLANOS
+var swiperPlans = new Swiper(".mySwiperPlans", {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    freeMode: true,
+    direction: 'horizontal',
+    navigation: {
+        nextEl: ".swiper-button-next-plans",
+        prevEl: ".swiper-button-prev-plans",
+    },
+    pagination: {
+        el: ".swiper-pagination-plans",
         clickable: true,
     },
 });

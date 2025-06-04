@@ -12,10 +12,62 @@
     transform: translateX(1.25rem) translateY(0) !important;
 }
 
-.swiper-pagination-bullet {
-    width: 2.188rem !important;
+/* CARROSEL INICIAL */
+.swiper-pagination-home .swiper-pagination-bullet {
+    width: 2.5rem !important;
     height: 0.313rem !important;
     background: #FFFFFF !important;
     border-radius: 0.75rem !important;
+    opacity: 0.4 !important;
+    margin: 0 10px !important;
+}
+
+.swiper-pagination-home .swiper-pagination-bullet-active {
+    width: 3.5rem !important;
+    transition: all 0.3s !important;
+    opacity: 1 !important;
+    transform: scale(1.2) !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next .swiper-button-next-home {
+    left: calc((100vw - 1290px) / 2) !important;
+    right: auto;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev .swiper-button-prev-home {
+    right: calc((100vw - 1290px) / 2) !important;
+    left: auto;
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev .swiper-button-prev-home {
+    right: calc((100vw - 1290px) / 2) !important;
+    left: auto;
+}
+
+/* CARROSEL PLANOS */
+.swiper-slide-plans {
+    max-width: 274px !important;
+}
+
+.swiper-pagination-plans {
+    display: flex;
+}
+
+.swiper-pagination-plans .swiper-pagination-bullet {
+    width: 2.7rem !important;
+    height: 0.2rem !important;
+    background: #f54a00 !important;
+    border-radius: 0.75rem !important;
+    margin: 0 10px !important;
+}
+
+.swiper-pagination-plans .swiper-pagination-bullet-active {
+    width: 3.5rem !important;
+    transition: all 0.3s !important;
+    opacity: 1 !important;
+    transform: scale(1.2) !important;
 }
 
