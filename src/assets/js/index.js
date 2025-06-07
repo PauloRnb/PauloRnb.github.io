@@ -1,19 +1,36 @@
 // ===== BLOQUEIO DE SCROLL COM TRAVA COMPLETA =====
 let openMenus = 0;
+let scrollPosition = 0;
 
 function lockScroll() {
     openMenus++;
     if (openMenus === 1) {
-        document.documentElement.style.overflow = 'hidden';
+        scrollPosition = window.scrollY || window.pageYOffset;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollPosition}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
         document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden';
+        document.documentElement.classList.add('scroll-locked');
+        document.body.classList.add('scroll-locked');
     }
 }
 
 function unlockScroll() {
     openMenus = Math.max(0, openMenus - 1);
     if (openMenus === 0) {
-        document.documentElement.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.width = '';
         document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+        document.documentElement.classList.remove('scroll-locked');
+        document.body.classList.remove('scroll-locked');
+        window.scrollTo(0, scrollPosition);
     }
 }
 
@@ -243,6 +260,7 @@ var swiperPlans = new Swiper(".mySwiperPlans", {
         clickable: true,
     },
 });
+
 
 
 
