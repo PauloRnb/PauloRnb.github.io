@@ -77,3 +77,17 @@ html, body {
     transform: scale(1.2) !important;
 }
 
+.swiper-button-next-plans, .swiper-button-prev-plans {
+    top: initial !important;
+    bottom: 0;
+}
+
+.swiper-button-next-plans {
+    right: 100px !important;
+}
+
+.swiper-button-prev-plans {
+    left: initial !important;
+    right: 200px !important;
+}
+
