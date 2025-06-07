@@ -57,7 +57,41 @@ html, body {
     left: auto;
 }
 
-/* CARROSEL PLANOS */
+/* CARROSEL PLANOS COMBOS */
+.swiper-pagination-combos {
+    display: flex;
+    width: initial !important;
+}
+
+.swiper-pagination-combos .swiper-pagination-bullet {
+    width: 2.7rem !important;
+    height: 0.2rem !important;
+    background: #f54a00 !important;
+    border-radius: 0.75rem !important;
+    margin: 0 10px !important;
+}
+
+.swiper-pagination-combos .swiper-pagination-bullet-active {
+    width: 3.5rem !important;
+    transition: all 0.3s !important;
+    opacity: 1 !important;
+    transform: scale(1.2) !important;
+}
+
+.swiper-button-next-combos, .swiper-button-prev-combos {
+    top: initial !important;
+    bottom: 0;
+}
+
+.swiper-button-next-combos {
+    right: 100px !important;
+}
+
+.swiper-button-prev-combos {
+    left: initial !important;
+    right: 200px !important;
+}
+/* CARROSEL PLANOS INTERNET */
 .swiper-slide-plans {
     max-width: 274px !important;
 }
