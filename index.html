@@ -291,7 +291,7 @@
                         <div class="bg-transparent">
                             <ul class="flex items-center gap-11 px-6 h-[6.25rem]">
                                 <li>
-                                    <a class="text-base text-gray-500 font-normal select-none" href="#">
+                                    <a class="text-base text-gray-500 font-normal select-none focus:text-orange-600 hover:text-orange-600" href="#">
                                         Indique Um Amigo
                                     </a>
                                 </li>
@@ -325,49 +325,38 @@
                         </div>
                         <li>
                             <button
-                                class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer"
+                                class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer group"
                                 id="btn-internet-residential">
-                                <span class="text-base text-gray-600 font-medium">
+                                <span class="text-base text-gray-600 font-medium group-focus:text-blue-900">
                                     Internet Residencial
                                 </span>
-                                <svg fill="#4A5565" height="16" viewbox="0 0 256 256" width="16"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z">
-                                    </path>
-                                </svg>
+                                <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-[1rem] -rotate-90 text-gray-600 group-focus:text-blue-700"><path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                             </button>
                         </li>
                         <li>
-                            <button
-                                class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer">
-                                <span class="text-base text-gray-600 font-medium">
+                            <a
+                                class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer group" href="#">
+                                <span class="text-base text-gray-600 font-medium group-focus:text-blue-900">
                                     Combos
                                 </span>
-                            </button>
+                            </a>
                         </li>
                         <li>
                             <button
-                                class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer">
-                                <span class="text-base text-gray-600 font-medium">
+                                class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer group" id="btn-internet-streaming">
+                                <span class="text-base text-gray-600 font-medium group-focus:text-blue-900">
                                     Streaming
                                 </span>
-                                <svg fill="#4A5565" height="16" viewbox="0 0 256 256" width="16"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M184.49,136.49l-80,80a12,12,0,0,1-17-17L159,128,87.51,56.49a12,12,0,1,1,17-17l80,80A12,12,0,0,1,184.49,136.49Z">
-                                    </path>
-                                </svg>
+                                <svg viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="size-[1rem] -rotate-90 text-gray-600 group-focus:text-blue-700"><path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                             </button>
                         </li>
                         <li>
-                            <button
-                                class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer"
-                                href="#">
-                                <span class="text-base text-gray-600 font-medium">
+                            <a
+                                class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer group" href="#">
+                                <span class="text-base text-gray-600 font-medium group-focus:text-blue-900">
                                     Seguran&ccedil;a
                                 </span>
-                            </button>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -633,8 +622,7 @@
                     </div>
                 </div>
                 <!-- FUNDO COM BLUR PARA O MENU 4 -->
-                <div class="fixed inset-0 bg-gray-800/20 backdrop-blur-[2px] z-40 hidden"
-                    id="menu-backdrop-internet-residential">
+                <div class="fixed inset-0 bg-gray-800/20 backdrop-blur-[2px] z-40 hidden" id="menu-backdrop-internet-residential">
                 </div>
                 <!-- MENU MOBILE 4 -->
                 <div class="bg-white w-full h-full fixed inset-y-0 right-0 translate-x-full opacity-0 pointer-events-none border-l border-white z-50 transition-all duration-300 ease-in-out sm:max-w-sm md:max-w-[600px]"
@@ -700,6 +688,81 @@
                                         <p class="leading-4 h-[4.688rem] md:h-[3rem]">
                                             Servi&ccedil;o de cabeamento para a sua casa, levando velocidade e
                                             estabilidade para sua conex&atilde;o.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FUNDO COM BLUR PARA O MENU 5 -->
+                <div class="fixed inset-0 bg-gray-800/20 backdrop-blur-[2px] z-40 hidden" id="menu-backdrop-internet-streaming">
+                </div>
+                <!-- MENU MOBILE 5 -->
+                <div class="bg-white w-full h-full fixed inset-y-0 right-0 translate-x-full opacity-0 pointer-events-none border-l border-white z-50 transition-all duration-300 ease-in-out sm:max-w-sm md:max-w-[600px]"
+                    id="box-menu-internet-streaming">
+                    <div class="w-full bg-white border-b-[1px] border-gray-200 h-[4.063rem] flex items-center justify-between px-6">
+                        <span class="text-lg text-blue-700 font-medium tracking-[0.01rem]">
+                            Internet Fibra
+                        </span>
+                        <!-- BOTÃO FECHAR O MENU 5 -->
+                        <button class="cursor-pointer" id="btn-close-internet-streaming">
+                            <svg fill="#1447e6" height="24" viewbox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM149.66,93.66,115.31,128l34.35,34.34a8,8,0,0,1-11.32,11.32l-40-40a8,8,0,0,1,0-11.32l40-40a8,8,0,0,1,11.32,11.32Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- DROPDOWN (fora do li, absoluto ao nav) STREAMING -->
+                    <div class="relative z-10 flex flex-col gap-6 h-full">
+                        <div class="flex flex-col items-start justify-between h-full">
+                            <div class="flex flex-col items-start gap-7 px-6 py-8 w-full">
+                                <h2 class="text-xs text-blue-700 font-semibold select-none">
+                                    STREAMING:
+                                </h2>
+                                <div class="flex flex-col items-start">
+                                    <a class="text-base text-gray-500 leading-4 mb-4 cursor-pointer font-medium hover:text-blue-500 focus:text-blue-900 select-none"
+                                        href="#">
+                                        Power
+                                        Cine Prime
+                                    </a>
+                                    <a class="text-base text-gray-500 leading-4 mb-4 cursor-pointer font-medium hover:text-blue-500 focus:text-blue-900 select-none"
+                                        href="#">
+                                        Power
+                                        Sports Prime
+                                    </a>
+                                    <a class="text-base text-gray-500 leading-4 cursor-pointer font-medium hover:text-blue-500 focus:text-blue-900 select-none"
+                                        href="#">
+                                        Hub
+                                        Premium
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="w-full h-40 min-h-[10rem] bg-gray-100 rounded-t-lg border-[1px] border-l-0 border-gray-200 px-6 py-8 sticky bottom-0 flex items-start justify-start gap-3 md:gap-24">
+                                <div>
+                                    <h3 class="font-medium text-base text-blue-700 leading-4 mb-2 select-none">
+                                        Watch
+                                    </h3>
+                                    <a href="#"
+                                        class="text-xs text-gray-500 hover:text-blue-500 focus:text-blue-900 hover:underline focus:underline">
+                                        <p class="leading-4">
+                                            Uma variedade de filmes, s&eacute;ries e
+                                            canais ao vivo.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="hidden md:block w-[1px] h-full bg-gray-300 shrink-0"></div>
+                                <div>
+                                    <h3 class="font-medium text-base text-blue-700 leading-4 mb-2 select-none">
+                                        Max
+                                    </h3>
+                                    <a href="#"
+                                        class="text-xs text-gray-500 hover:text-blue-500 focus:text-blue-900 hover:underline focus:underline">
+                                        <p class="leading-4">
+                                            Mergulhe nas emo&ccedil;&otilde;es das melhores
+                                            s&eacute;ries, filmes e eventos ao vivo.
                                         </p>
                                     </a>
                                 </div>

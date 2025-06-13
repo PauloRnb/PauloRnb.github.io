@@ -21,13 +21,14 @@ function toggleMenu(menu, backdrop, open) {
     open ? lockScroll() : unlockScroll();
 }
 
-// ===== INICIALIZAÇÕES =====
+// ===== INICIALIZAÇÕES DE MENUS =====
 function initMenus() {
     const menus = [
         ['btn-menu', 'btn-close', 'box-menu', 'menu-backdrop'],
         ['btn-signature', 'btn-close-signature', 'box-menu-signature', 'menu-backdrop-signature'],
         ['btn-client', 'btn-close-client', 'box-menu-client', 'menu-backdrop-client'],
         ['btn-internet-residential', 'btn-close-internet-residential', 'box-menu-internet-residential', 'menu-backdrop-internet-residential'],
+        ['btn-internet-streaming', 'btn-close-internet-streaming', 'box-menu-internet-streaming', 'menu-backdrop-internet-streaming'],
         ['btn-submenu', 'btn-closesubmenu', 'box-submenu', 'submenu-backdrop']
     ];
 
@@ -43,6 +44,7 @@ function initMenus() {
     });
 }
 
+// ===== DROPDOWNS =====
 function initDropdowns() {
     const triggers = document.querySelectorAll('[data-dropdown]');
 
@@ -130,6 +132,7 @@ function initDropdowns() {
     document.addEventListener('touchstart', closeAllDropdowns, { passive: true });
 }
 
+// ===== MODO ESCURO =====
 function initDarkMode() {
     const toggleDark = document.getElementById('toggleDark');
     toggleDark?.addEventListener('click', () => {
@@ -152,6 +155,7 @@ function initDarkMode() {
     }
 }
 
+// ===== MODAL POPUP =====
 function initModal() {
     const openBtn = document.getElementById("open-modal");
     const closeBtn = document.getElementById("close-modal");
@@ -175,6 +179,7 @@ function initModal() {
     });
 }
 
+// ===== TABS =====
 function initTabs() {
     const tabs = document.querySelectorAll(".tab-btn");
     const contents = document.querySelectorAll(".tab-content");
@@ -217,6 +222,7 @@ function initTabs() {
     });
 }
 
+// ===== SWIPERS =====
 function initSwipers() {
     window.swiperHome = new Swiper(".mySwiperHome", {
         spaceBetween: 30,
@@ -280,7 +286,7 @@ function initSwipers() {
     });
 }
 
-// ===== EXECUÇÃO =====
+// ===== EXECUÇÃO PRINCIPAL =====
 document.addEventListener('DOMContentLoaded', () => {
     initMenus();
     initDropdowns();
@@ -289,6 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSwipers();
 });
+
 
 
 
