@@ -26,8 +26,6 @@
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-zinc-100: oklch(96.7% 0.001 286.375);
     --color-zinc-300: oklch(87.1% 0.006 286.286);
-    --color-zinc-400: oklch(70.5% 0.015 286.067);
-    --color-zinc-500: oklch(55.2% 0.016 285.938);
     --color-zinc-600: oklch(44.2% 0.017 285.786);
     --color-zinc-900: oklch(21% 0.006 285.885);
     --color-white: #fff;
@@ -371,20 +369,8 @@
   .my-\[10px\] {
     margin-block: 10px;
   }
-  .mt-1 {
-    margin-top: calc(var(--spacing) * 1);
-  }
-  .mt-1\.5 {
-    margin-top: calc(var(--spacing) * 1.5);
-  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
-  }
-  .mt-2\.5 {
-    margin-top: calc(var(--spacing) * 2.5);
-  }
-  .mt-3 {
-    margin-top: calc(var(--spacing) * 3);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -409,9 +395,6 @@
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
-  }
-  .mb-3\.5 {
-    margin-bottom: calc(var(--spacing) * 3.5);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -561,17 +544,11 @@
   .h-\[17\.5rem\] {
     height: 17.5rem;
   }
-  .h-\[18\.75rem\] {
-    height: 18.75rem;
-  }
   .h-\[18px\] {
     height: 18px;
   }
   .h-\[20\.75rem\] {
     height: 20.75rem;
-  }
-  .h-\[20\.75remrem\] {
-    height: 20.75remrem;
   }
   .h-\[20\.625rem\] {
     height: 20.625rem;
@@ -591,9 +568,6 @@
   .h-\[39\.688rem\] {
     height: 39.688rem;
   }
-  .h-\[600px\] {
-    height: 600px;
-  }
   .h-full {
     height: 100%;
   }
@@ -603,8 +577,8 @@
   .min-h-\[29\.375rem\] {
     min-height: 29.375rem;
   }
-  .min-h-\[39\.688rem\] {
-    min-height: 39.688rem;
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-0 {
     width: calc(var(--spacing) * 0);
@@ -633,17 +607,11 @@
   .w-\[8\.5rem\] {
     width: 8.5rem;
   }
-  .w-\[9\.375rem\] {
-    width: 9.375rem;
-  }
   .w-\[9\.438rem\] {
     width: 9.438rem;
   }
   .w-\[10\.313rem\] {
     width: 10.313rem;
-  }
-  .w-\[10\.375rem\] {
-    width: 10.375rem;
   }
   .w-\[11\.25rem\] {
     width: 11.25rem;
@@ -708,11 +676,17 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-sm {
+    max-width: var(--container-sm);
+  }
   .min-w-\[10\.313rem\] {
     min-width: 10.313rem;
   }
   .min-w-\[375px\] {
     min-width: 375px;
+  }
+  .min-w-\[475px\] {
+    min-width: 475px;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -902,9 +876,6 @@
   .overflow-visible {
     overflow: visible;
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -974,9 +945,6 @@
   }
   .border-gray-200 {
     border-color: var(--color-gray-200);
-  }
-  .border-gray-500 {
-    border-color: var(--color-gray-500);
   }
   .border-orange-500 {
     border-color: var(--color-orange-500);
@@ -1068,9 +1036,6 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
-  .px-2 {
-    padding-inline: calc(var(--spacing) * 2);
-  }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
@@ -1113,9 +1078,6 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
-  .py-24 {
-    padding-block: calc(var(--spacing) * 24);
-  }
   .py-\[4\.688rem\] {
     padding-block: 4.688rem;
   }
@@ -1144,6 +1106,10 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -1455,13 +1421,6 @@
       }
     }
   }
-  .hover\:underline-offset-1 {
-    &:hover {
-      @media (hover: hover) {
-        text-underline-offset: 1px;
-      }
-    }
-  }
   .hover\:opacity-85 {
     &:hover {
       @media (hover: hover) {
@@ -1580,11 +1539,6 @@
       height: 26.875rem;
     }
   }
-  .md\:min-h-\[26\.875rem\] {
-    @media (width >= 48rem) {
-      min-height: 26.875rem;
-    }
-  }
   .md\:w-\[13\.5rem\] {
     @media (width >= 48rem) {
       width: 13.5rem;
@@ -1638,11 +1592,6 @@
   .md\:gap-24 {
     @media (width >= 48rem) {
       gap: calc(var(--spacing) * 24);
-    }
-  }
-  .md\:gap-x-2 {
-    @media (width >= 48rem) {
-      column-gap: calc(var(--spacing) * 2);
     }
   }
   .md\:gap-x-4 {
@@ -1739,16 +1688,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-  .xl\:min-w-\[1265px\] {
-    @media (width >= 80rem) {
-      min-width: 1265px;
-    }
-  }
-  .xl\:px-0 {
-    @media (width >= 80rem) {
-      padding-inline: calc(var(--spacing) * 0);
     }
   }
 }

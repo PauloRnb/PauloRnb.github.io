@@ -1,46 +1,10 @@
-// ===== BLOQUEIO DE SCROLL COM TRAVA COMPLETA =====
-let openMenus = 0;
-let scrollPosition = 0;
-
-function setBodyScrollStyles(locked) {
-    const body = document.body;
-    const html = document.documentElement;
-
-    if (locked) {
-        scrollPosition = window.scrollY || window.pageYOffset;
-        Object.assign(body.style, {
-            position: 'fixed',
-            top: `-${scrollPosition}px`,
-            left: '0',
-            right: '0',
-            width: '100%',
-            overflow: 'hidden',
-        });
-        html.style.overflow = 'hidden';
-        html.classList.add('scroll-locked');
-        body.classList.add('scroll-locked');
-    } else {
-        Object.assign(body.style, {
-            position: '',
-            top: '',
-            left: '',
-            right: '',
-            width: '',
-            overflow: '',
-        });
-        html.style.overflow = '';
-        html.classList.remove('scroll-locked');
-        body.classList.remove('scroll-locked');
-        window.scrollTo(0, scrollPosition);
-    }
-}
-
+// ===== BLOQUEIO DE SCROLL (sem quebrar layout) =====
 function lockScroll() {
-    if (++openMenus === 1) setBodyScrollStyles(true);
+    document.documentElement.classList.add('overflow-hidden');
 }
 
 function unlockScroll() {
-    if (--openMenus === 0) setBodyScrollStyles(false);
+    document.documentElement.classList.remove('overflow-hidden');
 }
 
 // ===== MENU TOGGLE GENERICO =====
@@ -325,6 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSwipers();
 });
+
 
 
 
