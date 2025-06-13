@@ -1,10 +1,12 @@
-// ===== BLOQUEIO DE SCROLL (sem quebrar layout) =====
+// ===== BLOQUEIO TOTAL DE SCROLL (inclusive mobile) =====
 function lockScroll() {
-    document.documentElement.classList.add('overflow-hidden');
+    document.documentElement.classList.add('scroll-locked');
+    document.body.classList.add('scroll-locked');
 }
 
 function unlockScroll() {
-    document.documentElement.classList.remove('overflow-hidden');
+    document.documentElement.classList.remove('scroll-locked');
+    document.body.classList.remove('scroll-locked');
 }
 
 // ===== MENU TOGGLE GENERICO =====
@@ -28,7 +30,6 @@ function initMenus() {
         ['btn-signature', 'btn-close-signature', 'box-menu-signature', 'menu-backdrop-signature'],
         ['btn-client', 'btn-close-client', 'box-menu-client', 'menu-backdrop-client'],
         ['btn-internet-residential', 'btn-close-internet-residential', 'box-menu-internet-residential', 'menu-backdrop-internet-residential'],
-        ['btn-internet-streaming', 'btn-close-internet-streaming', 'box-menu-internet-streaming', 'menu-backdrop-internet-streaming'],
         ['btn-submenu', 'btn-closesubmenu', 'box-submenu', 'submenu-backdrop']
     ];
 
@@ -286,7 +287,7 @@ function initSwipers() {
     });
 }
 
-// ===== EXECUÇÃO PRINCIPAL =====
+// ===== EXECUÇÃO FINAL =====
 document.addEventListener('DOMContentLoaded', () => {
     initMenus();
     initDropdowns();
@@ -295,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTabs();
     initSwipers();
 });
+
 
 
 

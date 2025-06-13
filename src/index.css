@@ -1,6 +1,8 @@
 .scroll-locked {
   overflow: hidden !important;
+  height: 100% !important;
   touch-action: none;
+  overscroll-behavior: none;
 }
 
 /* Dropdown Click e Hover*/
