@@ -3,8 +3,9 @@
   height: 100% !important;
   touch-action: none;
   overscroll-behavior: none;
+  position: fixed;
+  width: 100%;
 }
-
 /* Dropdown Click e Hover*/
 
 .relative.group:hover>div {

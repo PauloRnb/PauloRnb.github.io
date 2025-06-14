@@ -43,7 +43,7 @@
             <div class="max-w-7xl mx-auto px-5 md:px-8">
                 <div class="w-full h-[2.813rem] md:hidden">
                     <div class="w-full flex flex-col items-end justify-end md:hidden">
-                        <button
+                        <a href="#"
                             class="flex items-center justify-center gap-1 bg-transparent text-white text-xs font-medium leading-[14.4px] rounded-2xl my-[10px] hover:opacity-85 active:opacity-85 focus:opacity-85 transition-all duration-300 cursor-pointer select-none">
                             <span>
                                 Assine Pelo WhatsApp
@@ -57,7 +57,7 @@
                                     </path>
                                 </svg>
                             </div>
-                        </button>
+                        </a>
                         <div class="w-full h-[0.063rem] bg-[#16243657] shrink-0">
                         </div>
                     </div>
@@ -65,10 +65,9 @@
                 <div class="relative w-full h-[3.125rem] py-4 flex items-center justify-between md:h-[3.75rem]">
                     <div class="w-full flex items-center justify-between">
                         <!-- BOTÃO ESQUERDO - MODAL 001 -->
-                        <div class="">
-                            <button
-                                class="cursor-pointer select-none text-white flex items-center justify-center gap-1 text-base hover:opacity-85 focus:opacity-85 active:opacity-85 transition-all drop-shadow-blue-200 font-medium"
-                                id="open-modal" popovertarget="city-popover">
+                        <div>
+                            <button type="button" class="cursor-pointer select-none text-white flex items-center justify-center gap-1 text-base hover:opacity-85 focus:opacity-85 active:opacity-85 transition-all drop-shadow-blue-200 font-medium"
+                                id="open-modal">
                                 <span>
                                     &Aacute;reas de
                                     Cobertura
@@ -123,7 +122,7 @@
                                 </a>
                                 <div class="shrink-0 w-[1px] h-4 bg-white">
                                 </div>
-                                <button
+                                <button type="button"
                                     class="text-base text-white font-medium hover:underline active:underline focus:underline transition-all duration-200 flex items-center justify-center gap-1 cursor-pointer"
                                     id="toggleDark">
                                     <span>
@@ -140,7 +139,7 @@
                         </div>
                     </div>
                     <!-- BOTÃO DIREITO -->
-                    <button
+                    <button type="button"
                         class="text-white text-base font-medium cursor-pointer flex items-center justify-center gap-1 transition-all duration-300 select-none active:opacity-85 focus:opacity-85 hover:opacity-85 32md:hidden"
                         id="btn-submenu">
                         <span>
@@ -154,7 +153,7 @@
                         </svg>
                     </button>
                     <!-- FUNDO COM BLUR PARA O SUBMENU -->
-                    <div class="fixed inset-0 bg-gray-700/20 backdrop-blur-[2px] z-30 hidden" id="submenu-backdrop">
+                    <div class="fixed inset-0 bg-gray-800/30 backdrop-blur-[2px] z-30 hidden" id="submenu-backdrop">
                     </div>
                     <!-- SUB MENU MOBILE -->
                     <div class="bg-white w-full h-full fixed inset-y-0 right-0 translate-x-full opacity-0 pointer-events-none border-l border-white z-50 transition-all duration-300 ease-in-out sm:max-w-sm md:max-w-[600px] 32md:hidden"
@@ -164,7 +163,7 @@
                                 Menu De Acessibilidade
                             </span>
                             <!-- BUTTOM CLOSE -->
-                            <button class="cursor-pointer" id="btn-closesubmenu">
+                            <button type="button" class="cursor-pointer" id="btn-closesubmenu">
                                 <svg class="size-12 h-7 w-7 text-white" fill="none" viewbox="0 0 28 28"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -185,29 +184,29 @@
                         <!-- LIST SUB MENU -->
                         <ul class="flex flex-col w-full">
                             <li>
-                                <button
+                                <a href="#"
                                     class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer"
                                     href="#">
                                     <span class="text-base text-gray-600 font-medium">
                                         1 - Conte&uacute;do
                                     </span>
-                                </button>
+                                </a>
                             </li>
                             <li>
-                                <button
+                                <a href="3"
                                     class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer">
                                     <span class="text-base text-gray-600 font-medium">
                                         2 - Menu
                                     </span>
-                                </button>
+                                </a>
                             </li>
                             <li>
-                                <button
+                                <a href="#"
                                     class="w-full flex items-center justify-between px-6 py-8 border-b-[1px] border-gray-200 select-none cursor-pointer">
                                     <span class="text-base text-gray-600 font-medium">
                                         3 - Rodap&eacute;
                                     </span>
-                                </button>
+                                </a>
                             </li>
                             <li>
                                 <button
@@ -533,7 +532,7 @@
                             </svg>
                         </button>
                     </div>
-                    <div class="relative px-10 py-8 bg-white rounded-lg shadow-xl w-full h-full">
+                    <div class="relative px-6 py-8 bg-white rounded-lg shadow-xl w-full h-full">
                         <div class="relative z-10">
                             <div class="flex flex-col gap-6">
                                 <div>
@@ -645,7 +644,7 @@
                     <!-- DROPDOWN (fora do li, absoluto ao nav) INTERNET RESIDENCIAL -->
                     <div class="relative z-10 flex flex-col gap-6 h-full w-full">
                         <div class="flex flex-col items-start justify-between h-full">
-                            <div class="flex flex-col items-start gap-7 px-[1.563rem] py-8 w-full">
+                            <div class="flex flex-col items-start gap-7 px-6 py-8 w-full">
                                 <h2 class="text-xs text-blue-700 font-semibold select-none">
                                     INTERNET
                                     RESIDENCIAL:
@@ -664,7 +663,7 @@
                                 </div>
                             </div>
                             <div
-                                class="w-full h-40 min-h-[10rem] flex items-start justify-start gap-3 bg-gray-100 rounded-t-lg border-[1px] border-gray-200 px-[1.563rem] py-8 md:gap-24 sticky bottom-0">
+                                class="w-full h-40 min-h-[10rem] flex items-start justify-start gap-3 bg-gray-100 rounded-t-lg border-[1px] border-gray-200 px-6 py-8 md:gap-24 sticky bottom-0">
                                 <div class="flex flex-col items-start justify-center gap-2 h-[5.938rem]">
                                     <h3 class="font-medium md:text-base text-sm text-blue-700 leading-4 select-none">
                                         Solu&ccedil;&otilde;es Empresarial
@@ -5028,7 +5027,7 @@
                     </div>
                 </div>
                 <!-- BOTÃO FECHAR O MODAL -->
-                <button class="close-modal absolute right-4 top-4 cursor-pointer" id="close-modal">
+                <button typ="button" class="close-modal absolute right-4 top-4 cursor-pointer" id="close-modal">
                     <svg fill="#4A5565" height="28" viewbox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M165.66,101.66,139.31,128l26.35,26.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z">
