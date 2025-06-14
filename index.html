@@ -800,7 +800,7 @@
                                         <button class="relative text-base text-gray-700 font-medium flex items-center gap-1 group hover:text-blue-700 focus:text-blue-900 lg:text-lg cursor-pointer select-none"
                                             data-dropdown="empresarial" id="dropdownTrigger">
                                             Empresarial
-                                            <svg class="size-4 group-hover:rotate-[-180deg] transition-transform duration-200"
+                                            <svg  class="size-4 transition-transform duration-200 dropdown-arrow"
                                                 fill="none" viewbox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
                                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
@@ -880,7 +880,7 @@
                                                 class="relative text-base text-gray-700 font-medium flex items-center group gap-1 hover:text-blue-700 focus:text-blue-900 lg:text-lg cursor-pointer select-none"
                                                 data-dropdown="assine" id="dropdownTrigger">
                                                 Assine J&aacute;
-                                                <svg class="size-4 group-hover:rotate-[-180deg] transition-transform duration-200"
+                                                <svg class="size-4 transition-transform duration-200 dropdown-arrow"
                                                     fill="none" viewbox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
                                                         stroke-linecap="round" stroke-linejoin="round"
@@ -895,7 +895,7 @@
                                                 class="relative text-base text-gray-700 font-medium flex items-center group gap-1 hover:text-blue-700 focus:text-blue-900 lg:text-lg cursor-pointer select-none"
                                                 data-dropdown="cliente" id="dropdownTrigger">
                                                 &Aacute;rea Do Cliente
-                                                <svg class="size-4 transition-transform duration-200 group-hover:rotate-[-180deg]"
+                                                <svg class="size-4 transition-transform duration-200 dropdown-arrow"
                                                     fill="none" viewbox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
                                                         stroke-linecap="round" stroke-linejoin="round"
@@ -906,8 +906,7 @@
                                         </li>
                                     </ul>
                                     <!-- DROPDOWN (fora do li, absoluto ao nav) ASSINE JÁ -->
-                                    <div class="absolute top-[4.75rem] -left-96 animate-fadeIn transition group-hover:translate-x-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-100 ease-in-out group-hover:transform z-50 transform w-[37.5rem] h-[20.625rem]"
-                                        data-dropdown-target="assine" id="dropdown">
+                                    <div class="absolute top-[4.75rem] -left-96 animate-fadeIn transition group-hover:translate-x-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible duration-100 ease-in-out group-hover:transform z-50 transform w-[37.5rem] h-[20.625rem]" id="dropdown" data-dropdown-target="assine">
                                         <div class="relative px-10 py-8 bg-white rounded-lg shadow-xl w-full h-full">
                                             <div
                                                 class="w-10 h-10 bg-white rotate-45 absolute top-0 left-[26rem] rounded-sm z-0">
@@ -972,7 +971,7 @@
                                                                     </p>
                                                                 </div>
                                                             </div>
-                                                            <a class="text-sm text-white w-[10.313rem] text-center bg-blue-700 rounded-full px-3 py-2 ml-5 select-none hover:bg-blue-600 transition duration-100 focus:bg-blue-900"
+                                                            <a class="text-sm text-white w-[10.313rem] text-center bg-blue-700 rounded-full px-3 py-2 ml-5 select-none hover:bg-blue-500 transition duration-100 focus:bg-blue-900"
                                                                 href="#">
                                                                 ASSINE
                                                                 AGORA
@@ -1052,9 +1051,7 @@
                                         </div>
                                     </div>
                                     <!-- DROPDOWN (fora do li, absoluto ao nav) ÁREA DO CLIENTE -->
-                                    <div id="dropdownContent"
-                                        class="absolute top-[4.75rem] right-0 transition group-hover:translate-x-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible animate-fadeIn duration-100 ease-in-out group-hover:transform z-50 transform w-[27.5rem] h-[20.625rem]"
-                                        data-dropdown-target="cliente">
+                                    <div class="absolute top-[4.75rem] right-0 transition group-hover:translate-x-5 translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible animate-fadeIn duration-100 ease-in-out group-hover:transform z-50 transform w-[27.5rem] h-[20.625rem]" id="dropdownContent" data-dropdown-target="cliente">
                                         <div class="relative px-10 py-8 bg-white rounded-lg shadow-xl w-full h-full">
                                             <div
                                                 class="w-10 h-10 bg-white rotate-45 absolute top-0 left-[21rem] rounded-sm z-0">
@@ -1172,7 +1169,7 @@
                                         <button class="relative text-base text-gray-700 font-medium flex items-center gap-1 group hover:text-blue-700 focus:text-blue-900 lg:text-lg cursor-pointer select-none"
                                             data-dropdown="internetresidential" id="dropdownTrigger">
                                             Internet Residencial
-                                            <svg class="size-4 group-hover:rotate-[-180deg] transition-transform duration-200"
+                                            <svg class="size-4 transition-transform duration-200 dropdown-arrow"
                                                 fill="none" viewbox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
                                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
@@ -1191,7 +1188,7 @@
                                         <button class="relative text-base text-gray-700 font-medium flex items-center gap-1 group hover:text-blue-700 focus:text-blue-900 lg:text-lg cursor-pointer select-none"
                                             data-dropdown="streaming" id="dropdownTrigger">
                                             Streaming
-                                            <svg class="size-4 group-hover:rotate-[-180deg] transition-transform duration-200"
+                                            <svg class="size-4 transition-transform duration-200 dropdown-arrow"
                                                 fill="none" viewbox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M10.834 4.333L6.5 8.666 2.167 4.333" stroke="currentColor"
                                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
@@ -1401,7 +1398,7 @@
             <div class="w-full max-w-7xl mx-auto py-16">
                 <div class="flex flex-col px-5 md:px-8">
                     <div class="w-full flex items-center justify-center mb-14 md:items-start md:justify-start">
-                        <h3 class="text-orange-600 text-[2rem] font-semibold leading-9 w-full text-center md:text-4xl lg:text-left">Saiba mais sobre nossos serviços</h3>
+                        <h3 class="text-orange-600 text-[1.625rem] font-semibold leading-9 w-full text-center md:text-4xl lg:text-left">Saiba mais sobre nossos serviços</h3>
                     </div>
                     <!-- CONTEUDO SERVIÇOS -->
                     <div class="w-full flex flex-col items-center justify-center gap-y-6 md:flex-row md:gap-x-4">
@@ -1462,10 +1459,10 @@
         </section>
 
         <!-- SEÇÃO PLANOS -->
-        <section class="w-full bg-zinc-100">
+        <section class="w-full bg-gray-100">
             <div class="w-full max-w-7xl mx-auto py-16 relative">
                 <div class="w-full flex items-center justify-center mb-8 md:items-start md:justify-start px-5 md:px-8">
-                    <h3 class="text-orange-600 text-[2rem] font-semibold text-left leading-9 md:text-4xl w-full">
+                    <h3 class="text-orange-600 text-[1.625rem] font-semibold text-center sm:text-left leading-9 md:text-4xl w-full">
                         Aproveite
                         as nossas ofertas</h3>
                 </div>
@@ -4956,6 +4953,38 @@
                                 </section>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CABEAMENTO ESTRUTURADO -->
+        <section class="w-full min-h-[26.563rem]">
+            <div class="w-full max-w-7xl mx-auto py-16 relative">
+                <div class="flex flex-col items-center justify-center px-8 32md:flex-row 32md:justify-between gap-x-8">
+                    <div class="flex items-center justify-center md:items-start md:justify-start mb-14 32md:items-start 32md:justify-start 32md:mb-0">
+                        <div class="flex flex-col items-center justify-center gap-1.5 32md:items-start 32md:justify-start">
+                            <h3 class="text-orange-600 text-[1.625rem] font-semibold text-center leading-9 md:text-4xl 32md:text-left">Cabeamento Estruturado</h3>
+                            <p class="text-sm text-center text-gray-500 w-full leading-4 md:w-[27.5rem] 32md:text-left">O cabeamento estruturado é uma maneira de deixar todos
+                                os seus aparelhos tais como: <strong>Notebook</strong>, <strong>PC</strong>, <strong>TV</strong>, <strong>Impressoras</strong>
+                                e tudo que necessita de uma conexão via cabo</p>
+                        </div>
+                    </div>
+                    <div class="w-full h-[16.063rem] p-4 rounded-[1rem] bg-gray-100 flex flex-col items-start justify-between md:w-[25.938rem] 32md:w-[40.125rem]">
+                        <div class="w-[2.5rem] h-[2.5rem] flex items-center justify-center bg-blue-700 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" viewBox="0 0 256 256"><path d="M232,112H136V88h8a16,16,0,0,0,16-16V40a16,16,0,0,0-16-16H112A16,16,0,0,0,96,40V72a16,16,0,0,0,16,16h8v24H24a8,8,0,0,0,0,16H56v32H48a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16H80a16,16,0,0,0,16-16V176a16,16,0,0,0-16-16H72V128H184v32h-8a16,16,0,0,0-16,16v32a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V176a16,16,0,0,0-16-16h-8V128h32a8,8,0,0,0,0-16ZM112,40h32V72H112ZM80,208H48V176H80Zm128,0H176V176h32Z"></path></svg>
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <div class="flex flex-col gap-y-2">
+                                <h4 class="text-gray-900 text-2xl font-medium">Cabeamento Estruturado</h4>
+                                <div class="flex shrink-0 w-[2.688rem] h-[0.188rem] bg-blue-700 rounded-full"></div>
+                            </div>
+                            <div>
+                                <p class="text-sm text-left text-gray-500 w-full leading-4 h-[3.125rem] sm:h-[initial]">Mais velocidade com cabeamento estruturado,
+                                    totalmente sem custo incluso em todos os planos</p>
+                            </div>
+                        </div>
+                        <a href="#" class="flex items-center justify-center bg-blue-700 text-center px-4 py-1 rounded-full text-white text-sm hover:bg-blue-500 focus:bg-blue-900 transition-all duration-200">ASSINE AGORA</a>
                     </div>
                 </div>
             </div>

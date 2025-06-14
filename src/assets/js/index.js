@@ -45,7 +45,7 @@ function initMenus() {
     });
 }
 
-// ===== DROPDOWNS =====
+// ===== DROPDOWNS COM SETA ROTATIVA =====
 function initDropdowns() {
     const triggers = document.querySelectorAll('[data-dropdown]');
 
@@ -58,19 +58,34 @@ function initDropdowns() {
         let justTouched = false;
 
         const showDropdown = () => {
+            // Fecha todos os outros dropdowns
             document.querySelectorAll('[data-dropdown-target]').forEach(el => {
                 el.classList.add('opacity-0', 'invisible', 'pointer-events-none');
                 el.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
             });
 
+            document.querySelectorAll('[data-dropdown]').forEach(el => {
+                const arrow = el.querySelector('.dropdown-arrow');
+                arrow?.classList.remove('rotate-180');
+            });
+
+            // Mostra o atual
             dropdown.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
             dropdown.classList.add('opacity-100', 'visible', 'pointer-events-auto');
+
+            const arrow = trigger.querySelector('.dropdown-arrow');
+            arrow?.classList.add('rotate-180');
+
             isOpen = true;
         };
 
         const hideDropdown = () => {
             dropdown.classList.add('opacity-0', 'invisible', 'pointer-events-none');
             dropdown.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+
+            const arrow = trigger.querySelector('.dropdown-arrow');
+            arrow?.classList.remove('rotate-180');
+
             isOpen = false;
         };
 
@@ -125,6 +140,11 @@ function initDropdowns() {
             document.querySelectorAll('[data-dropdown-target]').forEach(el => {
                 el.classList.add('opacity-0', 'invisible', 'pointer-events-none');
                 el.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+            });
+
+            document.querySelectorAll('[data-dropdown]').forEach(el => {
+                const arrow = el.querySelector('.dropdown-arrow');
+                arrow?.classList.remove('rotate-180');
             });
         }
     }
@@ -243,6 +263,10 @@ function initSwipers() {
         document.querySelectorAll('[data-dropdown-target]').forEach(drop => {
             drop.classList.add('opacity-0', 'invisible', 'pointer-events-none');
             drop.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+        });
+        document.querySelectorAll('[data-dropdown]').forEach(el => {
+            const arrow = el.querySelector('.dropdown-arrow');
+            arrow?.classList.remove('rotate-180');
         });
     };
 
